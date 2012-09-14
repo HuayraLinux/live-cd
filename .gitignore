@@ -1,0 +1,7 @@
+.build
+binary
+cache
+chroot
+.lock
+chroot.packages.install
+chroot.packages.live

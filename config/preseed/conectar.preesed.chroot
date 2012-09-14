@@ -1,0 +1,7 @@
+user-setup passwd/user-default-groups string audio cdrom dip floppy video plugdev netdev powerdev scanner bluetooth fuse sudo
+user-setup passwd/root-password string alumno
+user-setup passwd/root-password-again string alumno
+user-setup passwd/user-fullname string Alumno
+user-setup passwd/user-password string alumno
+user-setup passwd/user-password-again string alumno
+

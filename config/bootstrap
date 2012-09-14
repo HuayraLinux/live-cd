@@ -1,0 +1,137 @@
+# config/bootstrap - options for live-build(7), bootstrap stage
+
+# $LB_ARCHITECTURES: select chroot architectures
+# (Default: autodetected)
+LB_ARCHITECTURES="i386"
+
+# $LB_BOOTSTRAP_INCLUDE: include packages on base
+# (Default: empty)
+LB_BOOTSTRAP_INCLUDE=""
+
+# $LB_BOOTSTRAP_EXCLUDE: exclude packages on base
+# (Default: empty)
+LB_BOOTSTRAP_EXCLUDE=""
+
+# $LB_BOOTSTRAP_FLAVOUR: select flavour to use
+# (Default: empty)
+LB_BOOTSTRAP_FLAVOUR=""
+
+# $LB_BOOTSTRAP_KEYRING: set distribution keyring
+# (Default: empty)
+LB_BOOTSTRAP_KEYRING=""
+
+# $LB_DISTRIBUTION: select distribution to use
+# (Default: wheezy)
+LB_DISTRIBUTION="wheezy"
+
+# $LB_PARENT_DISTRIBUTION: select parent distribution to use
+# (Default: wheezy)
+LB_PARENT_DISTRIBUTION="wheezy"
+
+# $LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION: select parent distribution for debian-installer to use
+# (Default: wheezy)
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="wheezy"
+
+# $LB_PARENT_MIRROR_BOOTSTRAP: set parent mirror to bootstrap from
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_BOOTSTRAP="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
+
+# $LB_PARENT_MIRROR_CHROOT: set parent mirror to fetch packages from
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_CHROOT="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
+
+# $LB_PARENT_MIRROR_CHROOT_SECURITY: set security parent mirror to fetch packages from
+# (Default: http://security.debian.org/)
+LB_PARENT_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
+
+# $LB_PARENT_MIRROR_CHROOT_VOLATILE: set volatile parent mirror to fetch packages from
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_CHROOT_VOLATILE="http://ftp.debian.org/debian/"
+
+# $LB_PARENT_MIRROR_CHROOT_BACKPORTS: set backports parent mirror to fetch packages from
+# (Default: http://backports.debian.org/debian-backports/)
+LB_PARENT_MIRROR_CHROOT_BACKPORTS="http://backports.debian.org/debian-backports/"
+
+# $LB_PARENT_MIRROR_BINARY: set parent mirror which ends up in the image
+# (Default: http://cdn.debian.net/debian/)
+LB_PARENT_MIRROR_BINARY="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
+
+# $LB_PARENT_MIRROR_BINARY_SECURITY: set security parent mirror which ends up in the image
+# (Default: http://security.debian.org/)
+LB_PARENT_MIRROR_BINARY_SECURITY="http://security.debian.org/"
+
+# $LB_PARENT_MIRROR_BINARY_VOLATILE: set volatile parent mirror which ends up in the image
+# (Default: http://cdn.debian.net/debian/)
+LB_PARENT_MIRROR_BINARY_VOLATILE="http://cdn.debian.net/debian/"
+
+# $LB_PARENT_MIRROR_BINARY_BACKPORTS: set backports parent mirror which ends up in the image
+# (Default: http://backports.debian.org/debian-backports/)
+LB_PARENT_MIRROR_BINARY_BACKPORTS="http://backports.debian.org/debian-backports/"
+
+# $LB_PARENT_MIRROR_DEBIAN_INSTALLER: set debian-installer parent mirror
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
+
+# $LB_MIRROR_BOOTSTRAP: set mirror to bootstrap from
+# (Default: http://localhost/debian/)
+LB_MIRROR_BOOTSTRAP="http://cdn.debian.net/debian/"
+
+# $LB_MIRROR_CHROOT: set mirror to fetch packages from
+# (Default: http://localhost/debian/)
+LB_MIRROR_CHROOT="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
+
+# $LB_MIRROR_CHROOT_SECURITY: set security mirror to fetch packages from
+# (Default: http://security.debian.org/)
+LB_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
+
+# $LB_MIRROR_CHROOT_VOLATILE: set volatile mirror to fetch packages from
+# (Default: http://ftp.debian.org/debian/)
+LB_MIRROR_CHROOT_VOLATILE="http://ftp.debian.org/debian/"
+
+# $LB_MIRROR_CHROOT_BACKPORTS: set backports mirror to fetch packages from
+# (Default: http://backports.debian.org/debian-backports/)
+LB_MIRROR_CHROOT_BACKPORTS="http://backports.debian.org/debian-backports/"
+
+# $LB_MIRROR_BINARY: set mirror which ends up in the image
+# (Default: http://cdn.debian.net/debian/)
+LB_MIRROR_BINARY="http://cdn.debian.org/debian/"
+
+# $LB_MIRROR_BINARY_SECURITY: set security mirror which ends up in the image
+# (Default: http://security.debian.org/)
+LB_MIRROR_BINARY_SECURITY="http://security.debian.org/"
+
+# $LB_MIRROR_BINARY_VOLATILE: set volatile mirror which ends up in the image
+# (Default: http://cdn.debian.net/debian/)
+LB_MIRROR_BINARY_VOLATILE="http://cdn.debian.net/debian/"
+
+# $LB_MIRROR_BINARY_BACKPORTS: set backports mirror which ends up in the image
+# (Default: http://backports.debian.org/debian-backports/)
+LB_MIRROR_BINARY_BACKPORTS="http://backports.debian.org/debian-backports/"
+
+# $LB_MIRROR_DEBIAN_INSTALLER: set debian-installer mirror
+# (Default: http://localhost/debian/)
+LB_MIRROR_DEBIAN_INSTALLER="http://cdn.debian.net/debian/"
+
+# $LB_ARCHIVES: enable available third-party archives
+# (Default: empty)
+LB_ARCHIVES=""
+
+# $LB_ARCHIVE_AREAS: select archive areas to use
+# (Default: main)
+LB_ARCHIVE_AREAS="main contrib non-free"
+
+# $LB_PARENT_ARCHIVE_AREAS: select archive areas to use
+# (Default: main)
+LB_PARENT_ARCHIVE_AREAS="main contrib non-free"
+
+# $LB_BOOTSTRAP_QEMU_ARCHITECTURES: architectures to use foreign bootstrap
+# (Default: )
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=""
+
+# $LB_BOOTSTRAP_QEMU_EXCLUDE: packages to exclude during foreign bootstrap
+# (Default: )
+LB_BOOTSTRAP_QEMU_EXCLUDE=""
+
+# $LB_BOOTSTRAP_QEMU_STATIC: static qemu binary for foreign bootstrap
+# (Default: )
+LB_BOOTSTRAP_QEMU_STATIC=""
