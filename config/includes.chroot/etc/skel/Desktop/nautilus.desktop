@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Ayuda y documentación
+Comment=Ayuda y documentación
+Exec=nautilus /usr/share/doc/conectar-apps-distro
+Icon=help
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Core;

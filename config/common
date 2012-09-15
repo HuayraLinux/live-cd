@@ -20,8 +20,8 @@ LB_APT_HTTP_PROXY=""
 LB_APT_PIPELINE=""
 
 # $LB_APT_RECOMMENDS: set apt/aptitude recommends
-# (Default: true)
-LB_APT_RECOMMENDS="true"
+# (Default: false)
+LB_APT_RECOMMENDS="false"
 
 # $LB_APT_SECURE: set apt/aptitude security
 # (Default: true)
@@ -138,7 +138,7 @@ _QUIET="false"
 #_VERBOSE="false"
 
 # Internal stuff (FIXME)
-APT_OPTIONS="--force-yes"
-OAAPTITUDE_OPTIONS="--assume-yes"
+APT_OPTIONS="--force-yes -y"
+APTITUDE_OPTIONS="--assume-yes"
 GZIP_OPTIONS="-6  --rsyncable"
 ISOHYBRID_OPTIONS=""
