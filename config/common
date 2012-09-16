@@ -20,8 +20,8 @@ LB_APT_HTTP_PROXY=""
 LB_APT_PIPELINE=""
 
 # $LB_APT_RECOMMENDS: set apt/aptitude recommends
-# (Default: false)
-LB_APT_RECOMMENDS="false"
+# (Default: true)
+LB_APT_RECOMMENDS="true"
 
 # $LB_APT_SECURE: set apt/aptitude security
 # (Default: true)
@@ -123,7 +123,7 @@ LB_TEMPLATES="/usr/share/live/build/templates"
 
 # $_COLOR: enable color
 # (Default: false)
-_COLOR="true"
+#_COLOR="false"
 
 # $_FORCE: enable force
 # (Default: false)
