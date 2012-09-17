@@ -1,5 +1,5 @@
 .build
-binary
+./binary
 cache
 chroot
 .lock
