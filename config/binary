@@ -6,7 +6,7 @@ LB_BINARY_FILESYSTEM="fat16"
 
 # $LB_BINARY_IMAGES: set image type
 # (Default: iso-hybrid)
-LB_BINARY_IMAGES="iso-hybrid"
+LB_BINARY_IMAGES="hdd"
 
 # $LB_APT_INDICES: set apt/aptitude generic indices
 # (Default: false)
@@ -63,7 +63,7 @@ LB_GRUB_SPLASH=""
 
 # $LB_HDD_LABEL: set hdd label
 # (Default: CONECTAR_LIVE)
-LB_HDD_LABEL="CONECTAR_LIVE"
+LB_HDD_LABEL="HUAYRA_LIVE"
 
 # $LB_HDD_SIZE: set hdd filesystem size
 # (Default: 10000)
@@ -71,7 +71,7 @@ LB_HDD_SIZE="10000"
 
 # $LB_ISO_APPLICATION: set iso author
 # (Default: Conectar Live)
-LB_ISO_APPLICATION="Conectar Live"
+LB_ISO_APPLICATION="Huayra Live"
 
 # $LB_ISO_PREPARER: set iso preparer
 # (Default: live-build 3.0~a51-1; http://packages.qa.debian.org/live-build)
