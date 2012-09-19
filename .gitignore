@@ -9,4 +9,4 @@ binary.contents
 binary.packages
 binary.hybrid.iso
 binary.img
-
+*.iso

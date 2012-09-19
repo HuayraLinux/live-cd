@@ -34,11 +34,11 @@ LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="wheezy"
 
 # $LB_PARENT_MIRROR_BOOTSTRAP: set parent mirror to bootstrap from
 # (Default: http://cdn.debian.net/debian/)
-LB_PARENT_MIRROR_BOOTSTRAP="http://cdn.debian.net/debian/"
+LB_PARENT_MIRROR_BOOTSTRAP="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
 
 # $LB_PARENT_MIRROR_CHROOT: set parent mirror to fetch packages from
 # (Default: http://cdn.debian.net/debian/)
-LB_PARENT_MIRROR_CHROOT="http://cdn.debian.net/debian/"
+LB_PARENT_MIRROR_CHROOT="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
 
 # $LB_PARENT_MIRROR_CHROOT_SECURITY: set security parent mirror to fetch packages from
 # (Default: http://security.debian.org/)

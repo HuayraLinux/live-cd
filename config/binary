@@ -5,8 +5,8 @@
 LB_BINARY_FILESYSTEM="fat16"
 
 # $LB_BINARY_IMAGES: set image type
-# (Default: iso-hybrid)
-LB_BINARY_IMAGES="hdd"
+# (Default: hdd)
+LB_BINARY_IMAGES="iso-hybrid"
 
 # $LB_APT_INDICES: set apt/aptitude generic indices
 # (Default: false)
@@ -18,7 +18,7 @@ LB_BOOTAPPEND_LIVE="hostname=huayra username=alumno locales=es_AR.UTF-8 keyboard
 
 # $LB_BOOTAPPEND_INSTALL: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_INSTALL="file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg"
+LB_BOOTAPPEND_INSTALL="file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/hd-media/install//preseed.cfg"
 
 # $LB_BOOTAPPEND_FAILSAFE: set boot parameters
 # (Default: empty)
@@ -62,7 +62,7 @@ LB_DEBIAN_INSTALLER_GUI="true"
 LB_GRUB_SPLASH=""
 
 # $LB_HDD_LABEL: set hdd label
-# (Default: CONECTAR_LIVE)
+# (Default: HUAYRA_LIVE)
 LB_HDD_LABEL="HUAYRA_LIVE"
 
 # $LB_HDD_SIZE: set hdd filesystem size
@@ -70,7 +70,7 @@ LB_HDD_LABEL="HUAYRA_LIVE"
 LB_HDD_SIZE="10000"
 
 # $LB_ISO_APPLICATION: set iso author
-# (Default: Conectar Live)
+# (Default: Huayra Live)
 LB_ISO_APPLICATION="Huayra Live"
 
 # $LB_ISO_PREPARER: set iso preparer
@@ -152,4 +152,3 @@ LB_SWAP_FILE_SIZE="512"
 # $LB_SYSLINUX_THEME: set syslinux theme package
 # (Default: live-build)
 LB_SYSLINUX_THEME="live-build"
-
