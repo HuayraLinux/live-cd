@@ -10,3 +10,4 @@ binary.packages
 binary.hybrid.iso
 binary.img
 *.iso
+*.torrent
