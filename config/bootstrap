@@ -54,19 +54,19 @@ LB_PARENT_MIRROR_CHROOT_BACKPORTS="http://localhost:3142/backports.debian.org/de
 
 # $LB_PARENT_MIRROR_BINARY: set parent mirror which ends up in the image
 # (Default: http://cdn.debian.net/debian/)
-LB_PARENT_MIRROR_BINARY="http://localhost:3142/ftp.ccc.uba.ar/pub/linux/debian/debian/"
+LB_PARENT_MIRROR_BINARY="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
 
 # $LB_PARENT_MIRROR_BINARY_SECURITY: set security parent mirror which ends up in the image
 # (Default: http://security.debian.org/)
-LB_PARENT_MIRROR_BINARY_SECURITY="http://localhost:3142/security.debian.org/"
+LB_PARENT_MIRROR_BINARY_SECURITY="http://security.debian.org/"
 
 # $LB_PARENT_MIRROR_BINARY_VOLATILE: set volatile parent mirror which ends up in the image
 # (Default: http://cdn.debian.net/debian/)
-LB_PARENT_MIRROR_BINARY_VOLATILE="http://localhost:3142/ftp.ccc.uba.ar/pub/linux/debian/debian/"
+LB_PARENT_MIRROR_BINARY_VOLATILE="http://ftp.ccc.uba.ar/pub/linux/debian/debian/"
 
 # $LB_PARENT_MIRROR_BINARY_BACKPORTS: set backports parent mirror which ends up in the image
 # (Default: http://backports.debian.org/debian-backports/)
-LB_PARENT_MIRROR_BINARY_BACKPORTS="http://localhost:3142/backports.debian.org/debian-backports/"
+LB_PARENT_MIRROR_BINARY_BACKPORTS="http://backports.debian.org/debian-backports/"
 
 # $LB_PARENT_MIRROR_DEBIAN_INSTALLER: set debian-installer parent mirror
 # (Default: http://ftp.ccc.uba.ar/pub/linux/debian/debian/)
