@@ -10,7 +10,7 @@
 # gtk-theme='Adwaita'
 #  - Use another background
 [org.gnome.desktop.background]
-picture-uri='file:///usr/share/images/desktop-base/huayra_login_concreto-originario.jpg'
+picture-uri='file:///usr/share/images/desktop-base/huayra-login.png'
 # picture-options='zoom'
 #  - Or no background at all
 # [org.gnome.desktop.background]
@@ -28,8 +28,8 @@ session-name='gdm-fallback'
 # Login manager options
 # =====================
 [org.gnome.login-screen]
-logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'
-fallback-logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'
+logo='/usr/share/icons/huayra/64x64/places/start-here.png'
+fallback-logo='/usr/share/icons/huayra/64x64/places/start-here.png'
 
 # - Disable user list
 # disable-user-list=true
