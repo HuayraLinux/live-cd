@@ -1,5 +1,6 @@
+firmware-iwlwifi
 firmware-linux-nonfree
-wireless-tools
 firmware-realtek
-xserver-xorg
 mawk
+xserver-xorg
+wireless-tools

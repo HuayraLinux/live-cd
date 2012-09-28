@@ -22,8 +22,10 @@ gnome-system-monitor
 gnome-terminal
 gnome-themes-standard
 gnome-tweak-tool
+nautilus-open-terminal
 network-manager-gnome
 network-manager-openvpn-gnome
 update-manager-gnome
 xdg-user-dirs
 xdg-utils
+menu-xdg

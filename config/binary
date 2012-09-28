@@ -5,7 +5,7 @@
 LB_BINARY_FILESYSTEM="fat16"
 
 # $LB_BINARY_IMAGES: set image type
-# (Default: hdd)
+# (Default: iso-hybrid)
 LB_BINARY_IMAGES="iso-hybrid"
 
 # $LB_APT_INDICES: set apt/aptitude generic indices
@@ -18,7 +18,7 @@ LB_BOOTAPPEND_LIVE="hostname=huayra username=alumno locales=es_AR.UTF-8 keyboard
 
 # $LB_BOOTAPPEND_INSTALL: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_INSTALL="file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/hd-media/install//preseed.cfg"
+LB_BOOTAPPEND_INSTALL="file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/hd-media/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg file=/cdrom/install//preseed.cfg"
 
 # $LB_BOOTAPPEND_FAILSAFE: set boot parameters
 # (Default: empty)
