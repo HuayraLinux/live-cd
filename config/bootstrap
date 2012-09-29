@@ -78,7 +78,7 @@ LB_MIRROR_BOOTSTRAP="http://localhost:3142/ftp.ccc.uba.ar/pub/linux/debian/debia
 
 # $LB_MIRROR_CHROOT: set mirror to fetch packages from
 # (Default: http://cdn.debian.net/debian/)
-LB_MIRROR_CHROOT="http://localhost:3142/ft.ccc.uba.ar/pub/linux/debian/debian/"
+LB_MIRROR_CHROOT="http://localhost:3142/ftp.ccc.uba.ar/pub/linux/debian/debian/"
 
 # $LB_MIRROR_CHROOT_SECURITY: set security mirror to fetch packages from
 # (Default: http://security.debian.org/)
