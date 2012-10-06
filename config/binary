@@ -43,7 +43,7 @@ LB_BUILD_WITH_CHROOT="true"
 
 # $LB_DEBIAN_INSTALLER: set debian-installer
 # (Default: true)
-LB_DEBIAN_INSTALLER="true"
+LB_DEBIAN_INSTALLER="live"
 
 # $LB_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
@@ -59,7 +59,7 @@ LB_DEBIAN_INSTALLER_GUI="true"
 
 # $LB_GRUB_SPLASH: set custom grub splash
 # (Default: empty)
-LB_GRUB_SPLASH=""
+LB_GRUB_SPLASH="huayra.xpm.gz"
 
 # $LB_HDD_LABEL: set hdd label
 # (Default: HUAYRA_LIVE)
@@ -71,7 +71,7 @@ LB_HDD_SIZE="10000"
 
 # $LB_ISO_APPLICATION: set iso author
 # (Default: Huayra Live)
-LB_ISO_APPLICATION="Huayra Live"
+LB_ISO_APPLICATION="Huayra GNU/Linux"
 
 # $LB_ISO_PREPARER: set iso preparer
 # (Default: live-build 3.0~a51-1; http://packages.qa.debian.org/live-build)

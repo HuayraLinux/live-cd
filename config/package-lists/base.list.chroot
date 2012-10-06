@@ -1,6 +1,9 @@
+debian-installer-launcher
 firmware-iwlwifi
 firmware-linux-nonfree
 firmware-realtek
+grub-pc
+grub-common
 mawk
 xserver-xorg
 wireless-tools
