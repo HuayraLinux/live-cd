@@ -12,6 +12,7 @@ cpufrequtils
 default-jre
 devede
 dia
+djmount
 drgeo
 euler
 file-roller
@@ -72,6 +73,7 @@ scribus
 simple-scan
 software-center
 sozi
+sshfs
 stellarium
 tuxguitar
 tuxpaint

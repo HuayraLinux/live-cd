@@ -1,7 +1,33 @@
-user-setup passwd/user-default-groups string audio cdrom dip floppy video plugdev netdev powerdev scanner bluetooth fuse sudo www-data
+user-setup passwd/user-default-groups string audio cdrom dip floppy video plugdev netdev powerdev scanner bluetooth fuse sudo www-data fuse
 user-setup passwd/root-password string alumno
 user-setup passwd/root-password-again string alumno
 user-setup passwd/user-fullname string Alumno
 user-setup passwd/user-password string alumno
 user-setup passwd/user-password-again string alumno
+d-i debian-installer/locale string es_AR.UTF-8
+d-i debian-installer/language string es
+d-i debian-installer/country string AR
+d-i console-keymaps-at/keymap select es
+d-i keyboard-configuration/xkb-keymap select es
+d-i passwd/root-login boolean true
+d-i passwd/root-password password alumno
+d-i passwd/root-password-again password alumno
+d-i passwd/user-fullname string Alumno
+d-i passwd/username string alumno
+d-i passwd/user-password password alumno
+d-i passwd/user-password-again password alumno
+d-i passwd/user-default-groups string audio cdrom video sudo netdev plugdev scanner lp fax voice floppy tape dip pulse lpadmin bluetooth www-data fuse
+d-i clock-setup/utc boolean true
+d-i time/zone string America/Argentina/Buenos_Aires
+d-i clock-setup/ntp boolean true
+d-i netcfg/enable boolean false
+d-i netcfg/get_hostname string huayra
+d-i netcfg/get_hostname seen true
+d-i netcfg/dhcp_hostname string huayra
+d-i netcfg/get_domain string ci.local
+d-i hw-detect/load_firmware boolean true
+d-i base-installer/install-recommends boolean false
+popularity-contest popularity-contest/participate boolean false
+d-i pkgsel/include string openssh-server huayra-desktop gawk mawk gdm3 base-files base-passwd mc locales coreutils cron debconf perl-base
+
 
