@@ -3,7 +3,7 @@
 [Desktop Entry]
 Name=Ayuda
 Comment=Ayuda y documentación
-Exec=xdg-open /usr/share/doc/conectar-apps-distro/Los_once_primeros.pdf.gz
+Exec=xdg-open /usr/share/doc/huayra-desktop/Los_once_primeros.pdf.gz
 Icon=/usr/share/icons/gnome/48x48/apps/help-browser.png
 Terminal=false
 Type=Application
