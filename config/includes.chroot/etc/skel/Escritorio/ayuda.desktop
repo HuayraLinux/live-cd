@@ -4,7 +4,7 @@
 Name=Ayuda
 Comment=Ayuda y documentación
 Exec=xdg-open /usr/share/doc/huayra-desktop/PUFs.pdf.gz
-Icon=/usr/share/icons/huayra/48x48/apps/help-browser.png
+Icon=/usr/share/icons/huayra/scalable/apps/help-browser.svg
 Terminal=false
 Type=Application
 StartupNotify=true
