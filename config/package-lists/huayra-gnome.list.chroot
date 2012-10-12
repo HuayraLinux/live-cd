@@ -27,8 +27,10 @@ network-manager-gnome
 network-manager-openvpn-gnome
 update-manager-gnome
 xdg-user-dirs
+xdg-user-dirs-gtk
 xdg-utils
 menu-xdg
 eog
 evince
 gedit
+ceribou

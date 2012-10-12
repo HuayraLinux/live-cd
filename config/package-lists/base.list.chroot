@@ -7,3 +7,6 @@ grub-common
 mawk
 xserver-xorg
 wireless-tools
+ntfs-3g
+e2fsprogs
+dosfstools
