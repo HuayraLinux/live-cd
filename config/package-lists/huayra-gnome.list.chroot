@@ -29,3 +29,5 @@ update-manager-gnome
 xdg-user-dirs
 xdg-utils
 menu-xdg
+eog
+evince
