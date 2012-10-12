@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=Mozilla Firefox
 Comment=Mozilla Firefox
-Exec=/opt/firefox/firefox
+Exec=/opt/firefox/firefox.sh
 Icon=/opt/firefox/icons/mozicon128.png
 Categories=Application;Internet;Network
 Version=1.0
