@@ -3,7 +3,7 @@
 [Desktop Entry]
 Name=Ayuda
 Comment=Ayuda y documentación
-Exec=xdg-open /usr/share/doc/huayra-desktop/PUFs.pdf.gz
+Exec=xdg-open /usr/share/huayra-desktop/
 Icon=/usr/share/icons/huayra/scalable/apps/help-browser.svg
 Terminal=false
 Type=Application
