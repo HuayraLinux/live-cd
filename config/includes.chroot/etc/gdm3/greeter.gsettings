@@ -10,7 +10,7 @@
 # gtk-theme='Adwaita'
 #  - Use another background
 [org.gnome.desktop.background]
-picture-uri='file:///usr/share/images/desktop-base/huayra-login.jpg'
+picture-uri='file:///usr/share/images/huayra-desktop/huayra-login.jpg'
 # picture-options='zoom'
 #  - Or no background at all
 # [org.gnome.desktop.background]
