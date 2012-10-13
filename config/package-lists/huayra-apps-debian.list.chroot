@@ -1,5 +1,6 @@
 arista
 audacity
+avahi-daemon
 avogadro
 babiloo
 bkchem
@@ -52,6 +53,7 @@ jmol
 libreoffice
 lighttpd
 mc
+mdns-scan
 mixxx
 mypaint
 nautilus-image-converter
