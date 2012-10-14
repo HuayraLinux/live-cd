@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Setup password's"
+echo " Claves por defecto de huayra "
 echo "root:alumno" | chpasswd
 echo "alumno:alumno" | chpasswd
