@@ -11,9 +11,11 @@ firmware-linux
 firmware-linux-nonfree
 firmware-ralink
 firmware-realtek
+gparted
 grub-common
 grub-pc
 mawk
 ntfs-3g
+unetbootin
 wireless-tools
 xserver-xorg
