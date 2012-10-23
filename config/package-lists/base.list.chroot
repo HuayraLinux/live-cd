@@ -1,7 +1,6 @@
 acpi
 acpi-support
 acpi-support-base
-debian-installer-launcher
 dosfstools
 e2fsprogs
 firmware-brcm80211
