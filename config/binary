@@ -43,7 +43,7 @@ LB_BUILD_WITH_CHROOT="true"
 
 # $LB_DEBIAN_INSTALLER: set debian-installer
 # (Default: true)
-LB_DEBIAN_INSTALLER="live"
+LB_DEBIAN_INSTALLER="true"
 
 # $LB_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
