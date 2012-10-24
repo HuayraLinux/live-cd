@@ -15,6 +15,7 @@ grub-common
 grub-pc
 mawk
 ntfs-3g
+rfkill
 unetbootin
 wireless-tools
 xserver-xorg
