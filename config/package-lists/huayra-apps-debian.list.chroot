@@ -91,3 +91,14 @@ vim
 vinagre
 vlc
 zip
+pd-aubio
+pd-csound
+pd-cyclone
+pd-purepd
+puredata
+puredata-core
+puredata-doc
+puredata-extra
+puredata-gui
+puredata-utils
+puredata-import
