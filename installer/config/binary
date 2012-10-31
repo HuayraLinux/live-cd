@@ -63,7 +63,7 @@ LB_GRUB_SPLASH="huayra.xpm.gz"
 
 # $LB_HDD_LABEL: set hdd label
 # (Default: HUAYRA_LIVE)
-LB_HDD_LABEL="HUAYRA_LIVE"
+LB_HDD_LABEL="HUAYRA_INSTALL"
 
 # $LB_HDD_SIZE: set hdd filesystem size
 # (Default: 10000)
@@ -83,7 +83,7 @@ LB_ISO_PUBLISHER="Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@c
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
 # (Default: Huayra GNU/Linux 20120913-11:01)
-LB_ISO_VOLUME="Huayra GNU/Linux 20120913-11:01"
+LB_ISO_VOLUME="Huayra GNU/Linux"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
