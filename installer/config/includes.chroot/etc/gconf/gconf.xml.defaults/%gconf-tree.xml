@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="apps">
+		<dir name="gksu">
+			<entry name="sudo-mode" mtime="1347726712" type="int" value="1"/>
+		</dir>
+	</dir>
+</gconf>

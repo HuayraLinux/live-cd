@@ -1,0 +1,4 @@
+deb http://200.55.245.7/huayra/ testing main
+deb-src http://200.55.245.7/huayra/ testing main
+
+

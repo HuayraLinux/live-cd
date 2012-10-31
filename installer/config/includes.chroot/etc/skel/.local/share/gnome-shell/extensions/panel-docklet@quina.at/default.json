@@ -1,0 +1,47 @@
+{
+"first-time": true,
+
+"on-all-screens": false,
+"show-window-texture": true,
+"show-window-list": true,
+"autohide": true,
+"dont-hide-size": 18,
+"hide-to-opacity": 150,
+"cut-view": false,
+"strut-space": 0,
+
+"show-workspace-number": true,
+"show-workspace-navigator": false,
+"workspace-navigators-num": 2,
+"show-desktop-button": true,
+"create-tray-button": 0,
+
+"favorites-as-windows":false,
+"favorites-as-buttons":false,
+
+"fix-docklet-position-at": 2,
+"expand-box": false,
+"dock-width-percent": 0.24,
+"max-width-percent": 1,
+"dock-x-percent": 0.44,
+"dock-y": 1,
+
+"zoom-effect": false,
+"hover-window-list": false,
+"hover-timeout": 500,
+"only-screen-windows": false,
+"only-one-icon": false,
+"order-icons": true,
+"list-all-workspaces": false,
+"show-window-title": false,
+"show-window-number":true,
+"smart-window-number":true,
+"basic-button-width": 250,
+"basic-icon-size": 25,
+"middle-click-action": 2,
+
+"time-until-hide": 200,
+"time-until-show": 50,
+"show-time": 0.15,
+"hide-time": 0.35
+}
