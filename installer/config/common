@@ -1,7 +1,7 @@
 # config/common - common options for live-build(7)
 
 # LB_CONFIG_VERSION: internal version of the configuration file format
-LB_CONFIG_VERSION="3.0~a51"
+LB_CONFIG_VERSION="3.0~b5"
 
 # $LB_APT: set package manager
 # (Default: apt)
@@ -138,7 +138,9 @@ _QUIET="false"
 #_VERBOSE="false"
 
 # Internal stuff (FIXME)
-APT_OPTIONS="--force-yes -y"
+APT_OPTIONS="--force-yes -y --allow-unauthenticated"
 APTITUDE_OPTIONS="--assume-yes"
 GZIP_OPTIONS="-6  --rsyncable"
+DEBOOTSTRAP_OPTIONS=""
+CDEBOOTSTRAP_OPTIONS=""
 ISOHYBRID_OPTIONS=""

@@ -22,7 +22,7 @@ LB_BOOTAPPEND_INSTALL="file=/cdrom/install/preseed.cfg file=/hd-media/install/pr
 
 # $LB_BOOTAPPEND_FAILSAFE: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_FAILSAFE="memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal"
+LB_BOOTAPPEND_LIVE_FAILSAFE="memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal"
 
 # $LB_BOOTLOADER: set bootloader
 # (Default: syslinux)
@@ -30,11 +30,13 @@ LB_BOOTLOADER="syslinux"
 
 # $LB_CHECKSUMS: set checksums
 # (Default: sha256)
-LB_CHECKSUMS="sha256"
+LB_CHECKSUMS="md5"
 
 # $LB_COMPRESSION: set compression
 # (Default: gzip)
-LB_COMPRESSION="gzip"
+LB_COMPRESSION="none"
+
+LB_ZSYNC="true"
 
 # ${LB_BUILD_WITH_CHROOT: control if we build binary images chrooted
 # (Default: true)
@@ -51,7 +53,7 @@ LB_DEBIAN_INSTALLER_DISTRIBUTION="wheezy"
 
 # $LB_DEBIAN_INSTALLER_PRESEEDFILE: set debian-installer preseed filename/url
 # (Default: /preseed.cfg)
-LB_DEBIAN_INSTALLER_PRESEEDFILE="/preseed.cfg"
+LB_DEBIAN_INSTALLER_PRESEEDFILE="/preseed.2.cfg"
 
 # $LB_DEBIAN_INSTALLER_GUI: toggle use of GUI debian-installer
 # (Default: true)
@@ -75,7 +77,7 @@ LB_ISO_APPLICATION="Huayra GNU/Linux"
 
 # $LB_ISO_PREPARER: set iso preparer
 # (Default: live-build 3.0~a51-1; http://packages.qa.debian.org/live-build)
-LB_ISO_PREPARER="live-build 3.0~a51-1; http://packages.qa.debian.org/live-build"
+LB_ISO_PREPARER="live-build $VERSION; http://packages.qa.debian.org/live-build"
 
 # $LB_ISO_PUBLISHER: set iso publisher
 # (Default: Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar)
@@ -83,7 +85,7 @@ LB_ISO_PUBLISHER="Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@c
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
 # (Default: Huayra GNU/Linux 20120913-11:01)
-LB_ISO_VOLUME="Huayra GNU/Linux"
+LB_ISO_VOLUME="Huayra GNU/Linux $(date +%Y%m%d-%H:%M)"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
@@ -96,6 +98,8 @@ LB_MEMTEST="none"
 # $LB_WIN32_LOADER: set win32-loader
 # (Default: false)
 LB_WIN32_LOADER="false"
+
+LB_LOADLIN="false"
 
 # $LB_NET_ROOT_FILESYSTEM: set netboot filesystem
 # (Default: nfs)
