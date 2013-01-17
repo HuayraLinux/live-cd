@@ -65,7 +65,7 @@ LB_DEBCONF_PRIORITY="critical"
 
 # $LB_INITRAMFS: set initramfs hook
 # (Default: live-boot)
-LB_INITRAMFS="live-boot"
+LB_INITRAMFS="auto"
 
 # $LB_INITRAMFS_COMPRESSION: set initramfs compression
 # (Default: gzip)
