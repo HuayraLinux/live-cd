@@ -1,0 +1,15 @@
+#!/bin/bash
+new_user=$1
+new_uid=$2
+new_gid=$3
+new_home=$4
+
+# creando gtk-bookmarks
+
+echo  "file://$new_home/Descargas" > "$new_home/.gtk-bookmarks"
+echo  "file://$new_home/Documentos" >> "$new_home/.gtk-bookmarks"
+echo  "file://$new_home/Imágenes" >> "$new_home/.gtk-bookmarks"
+echo  "file://$new_home/Vídeos" >> "$new_home/.gtk-bookmarks"
+echo  "file://$new_home/Música" >> "$new_home/.gtk-bookmarks"
+
+chown $new_user:$new_user "$new_home/.gtk-bookmarks"

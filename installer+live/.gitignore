@@ -1,0 +1,13 @@
+.build
+binary/
+cache
+chroot
+.lock
+chroot.packages.install
+chroot.packages.live
+binary.contents
+binary.packages
+binary.hybrid.iso
+binary.img
+*.iso
+*.torrent

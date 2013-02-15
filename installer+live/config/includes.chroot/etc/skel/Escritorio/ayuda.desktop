@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Ayuda
+Comment=Ayuda y documentación
+Exec=xdg-open /usr/share/huayra-desktop/
+Icon=/usr/share/icons/huayra/scalable/apps/help-browser.svg
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Core;
+MimeType=inode/directory;application/x-gnome-saved-search;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.4.2
