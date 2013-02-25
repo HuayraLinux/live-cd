@@ -1,7 +1,7 @@
 # config/common - common options for live-build(7)
 
 # LB_CONFIG_VERSION: internal version of the configuration file format
-LB_CONFIG_VERSION="3.0~b5"
+LB_CONFIG_VERSION="3.0.0"
 
 # $LB_APT: set package manager
 # (Default: apt)
@@ -55,10 +55,6 @@ LB_CACHE_STAGES="bootstrap"
 # (Default: noninteractive)
 LB_DEBCONF_FRONTEND="noninteractive"
 
-# $LB_DEBCONF_NOWARNINGS: set debconf(1) warnings
-# (Default: yes)
-LB_DEBCONF_NOWARNINGS="yes"
-
 # $LB_DEBCONF_PRIORITY: set debconf(1) priority to use
 # (Default: critical)
 LB_DEBCONF_PRIORITY="critical"
@@ -103,10 +99,6 @@ LB_USE_FAKEROOT="false"
 # (Default: apt)
 LB_TASKSEL="apt"
 
-# $LB_INCLUDES: set includes
-# (Default: /usr/share/live/build/includes)
-LB_INCLUDES="/usr/share/live/build/includes"
-
 # $LB_TEMPLATES: set templates
 # (Default: /usr/share/live/build/templates)
 LB_TEMPLATES="/usr/share/live/build/templates"
@@ -140,7 +132,7 @@ _QUIET="false"
 # Internal stuff (FIXME)
 APT_OPTIONS="--force-yes -y --allow-unauthenticated"
 APTITUDE_OPTIONS="--assume-yes"
-GZIP_OPTIONS="-6  --rsyncable"
 DEBOOTSTRAP_OPTIONS=""
 CDEBOOTSTRAP_OPTIONS=""
+GZIP_OPTIONS="-6  --rsyncable"
 ISOHYBRID_OPTIONS=""
