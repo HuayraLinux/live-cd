@@ -11,3 +11,4 @@ binary.hybrid.iso
 binary.img
 *.iso
 *.torrent
+*.zsync.gz
