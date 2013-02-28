@@ -18,7 +18,7 @@ LB_BOOTAPPEND_LIVE="hostname=huayra username=alumno locales=es_AR.UTF-8 keyboard
 
 # $LB_BOOTAPPEND_INSTALL: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_INSTALL="file=/cdrom/install/preseed.cfg file=/hd-media/install/preseed.cfg file=/cdrom/install//preseed.2.cfg"
+LB_BOOTAPPEND_INSTALL="file=/cdrom/install/preseed.cfg file=/hd-media/install/preseed.cfg file=/cdrom/install//preseed.2.cfg file=/cdrom/install//preseed.2.cfg file=/cdrom/install//preseed.2.cfg"
 
 # $LB_BOOTAPPEND_LIVE_FAILSAFE: set boot parameters
 # (Default: empty)
