@@ -126,8 +126,8 @@ LB_TEMPLATES="/usr/share/live/build/templates"
 _QUIET="false"
 
 # $_VERBOSE: enable verbose
-# (Default: true)
-#_VERBOSE="true"
+# (Default: false)
+#_VERBOSE="false"
 
 # Internal stuff (FIXME)
 APT_OPTIONS="--force-yes -y --allow-unauthenticated"

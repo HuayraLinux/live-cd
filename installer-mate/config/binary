@@ -87,7 +87,7 @@ LB_ISO_PUBLISHER="Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@c
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
 # (Default: Huayra GNU/Linux 20130225-15:50)
-LB_ISO_VOLUME="Huayra GNU/Linux 20130225-15:50"
+LB_ISO_VOLUME="Huayra GNU/Linux"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
