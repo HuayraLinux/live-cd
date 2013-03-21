@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+update-alternatives --set x-session-manager /usr/bin/mate-session
+update-alternatives --set x-window-manager /usr/bin/metacity
+
+
