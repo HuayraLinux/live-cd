@@ -18,7 +18,7 @@ LB_BOOTAPPEND_LIVE="hostname=huayra username=alumno locales=es_AR.UTF-8 keyboard
 
 # $LB_BOOTAPPEND_INSTALL: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_INSTALL="file=/cdrom/install/preseed.cfg file=/hd-media/install/preseed.cfg file=/cdrom/install//preseed.2.cfg"
+LB_BOOTAPPEND_INSTALL="file=/cdrom/install/preseed.cfg file=/hd-media/install/preseed.cfg file=/cdrom/install//preseed.2.cfg file=/cdrom/install//preseed.2.cfg"
 
 # $LB_BOOTAPPEND_LIVE_FAILSAFE: set boot parameters
 # (Default: empty)
@@ -86,8 +86,8 @@ LB_ISO_PREPARER="live-build 3.0.0-1; http://packages.qa.debian.org/live-build"
 LB_ISO_PUBLISHER="Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Huayra GNU/Linux 20130225-16:01)
-LB_ISO_VOLUME="Huayra GNU/Linux 20130225-16:01"
+# (Default: Huayra GNU/Linux 1.0)
+LB_ISO_VOLUME="Huayra GNU/Linux 1.0"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
