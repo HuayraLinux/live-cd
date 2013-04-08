@@ -12,4 +12,5 @@ binary.img
 *.iso
 *.torrent
 *.zsync
+*.md5
 
