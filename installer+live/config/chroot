@@ -22,7 +22,7 @@ LB_INTERACTIVE="false"
 
 # $LB_KEYRING_PACKAGES: set keyring packages
 # (Default: empty)
-LB_KEYRING_PACKAGES="debian-archive-keyring"
+LB_KEYRING_PACKAGES="debian-archive-keyring huayra-archive-keyring"
 
 # $LB_LINUX_FLAVOURS: set kernel flavour to use
 # (Default: autodetected)

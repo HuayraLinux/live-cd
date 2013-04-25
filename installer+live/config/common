@@ -110,8 +110,8 @@ LB_TEMPLATES="/usr/share/live/build/templates"
 #_BREAKPOINTS="false"
 
 # $_DEBUG: enable debug
-# (Default: false)
-#_DEBUG="false"
+# (Default: true)
+#_DEBUG="true"
 
 # $_COLOR: enable color
 # (Default: false)
