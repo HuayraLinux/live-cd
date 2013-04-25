@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[es_AR]=mate-control-center-symbolic
+Name[es_AR]=Centro de Control
+Exec=/usr/bin/mate-control-center
+Comment[es_AR]=El centro de control de MATE
+Name=Centro de Control
+Comment=El centro de control de MATE
+Icon=mate-control-center-symbolic

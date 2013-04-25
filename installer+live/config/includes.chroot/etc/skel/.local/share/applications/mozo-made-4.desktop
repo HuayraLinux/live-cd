@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[es_AR]=/usr/share/pyshared/pygame/pygame_icon.svg
+Name[es_AR]=Pygame
+Exec=ipython -i -c 'import pygame'
+Comment[es_AR]=Biblioteca para desarrollo de videojuegos Pygame
+Name=Pygame
+Comment=Biblioteca para desarrollo de videojuegos Pygame
+Icon=/usr/share/pyshared/pygame/pygame_icon.svg
