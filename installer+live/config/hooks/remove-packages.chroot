@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -e
-echo "Quitando paquetes innecesarios"
-apt-get -y remove gnome-shell gnome-shell-common
