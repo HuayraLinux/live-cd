@@ -13,3 +13,4 @@ binary.img
 *.torrent
 *.zsync
 *.zsync.gz
+*.md5
