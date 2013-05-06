@@ -1,8 +1,8 @@
 deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa main contrib non-free
 deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa main contrib non-free
 
-deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa-proposed main contrib non-free
-deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa-proposed main contrib non-free
+# deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa-proposed main contrib non-free
+# deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa-proposed main contrib non-free
 
 deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa-updates main contrib non-free
 deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra/ brisa-updates main contrib non-free
