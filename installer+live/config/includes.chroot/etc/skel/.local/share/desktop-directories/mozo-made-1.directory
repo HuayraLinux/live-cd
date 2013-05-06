@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Version=1.0
-Type=Directory
-Icon[es_AR]=/usr/share/icons/gnome/256x256/places/gnome-fs-network.png
-Name[es_AR]=Software de Administración de Clases
-Name=Software de Administración de Clases
-Icon=/usr/share/icons/gnome/256x256/places/gnome-fs-network.png
