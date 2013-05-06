@@ -3,5 +3,7 @@
 set -e
 echo "Quitando paquetes innecesarios"
 apt-get -y remove gnome-shell gnome-shell-common iceweasel
+apt-get -y remove gnome-system-monitor
+
 echo "Fix bug huara-base "
 apt-get -y install huayra-base
