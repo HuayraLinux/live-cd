@@ -14,3 +14,4 @@ binary.img
 *.zsync
 *.zsync.gz
 *.md5
+*.log
