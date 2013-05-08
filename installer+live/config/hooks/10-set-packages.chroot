@@ -7,3 +7,5 @@ apt-get -y remove gnome-system-monitor
 
 echo "Fix bug huara-base "
 apt-get -y install huayra-base
+
+dpkg-reconfigre huayra-desktop-mate-settings
