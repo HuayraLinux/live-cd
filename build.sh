@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# test real o link
+readlink $0
+if [ $? == 0 ]; then
+    echo "Check OK"
+else
+    echo "Debe ejecutar este script dentro de un directorio de configuracion (ej: cd installer+live y luego ./build.sh)"
+    exit 1
+fi
+
 lb clean
 build_timestamp=`date +%d.%m.%Y-%H.%M`
 
