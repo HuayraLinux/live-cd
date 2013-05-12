@@ -26,7 +26,7 @@ LB_KEYRING_PACKAGES="debian-archive-keyring huayra-archive-keyring"
 
 # $LB_LINUX_FLAVOURS: set kernel flavour to use
 # (Default: autodetected)
-LB_LINUX_FLAVOURS="486"
+LB_LINUX_FLAVOURS="486 686-pae"
 
 # $LB_LINUX_PACKAGES: set kernel packages to use
 # (Default: autodetected)

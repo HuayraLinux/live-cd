@@ -1,7 +1,7 @@
 # config/common - common options for live-build(7)
 
 # LB_CONFIG_VERSION: internal version of the configuration file format
-LB_CONFIG_VERSION="3.0.1"
+LB_CONFIG_VERSION="3.0.5"
 
 # $LB_APT: set package manager
 # (Default: apt)

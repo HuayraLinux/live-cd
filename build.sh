@@ -9,6 +9,7 @@ else
     exit 1
 fi
 
+echo "Limpiando..." |tee -a build.log
 lb clean
 build_timestamp=`date +%d.%m.%Y-%H.%M`
 
@@ -18,12 +19,14 @@ else
   build_release_name="huayra"
 fi
 
-lb build 2>&1 |tee build.log
+lb build 2>&1 |tee -a build.log
 
 if [ -f binary.hybrid.iso ]; then
   mv binary.hybrid.iso "$build_release_name-$build_timestamp.iso"
   md5sum "$build_release_name-$build_timestamp.iso" > "$build_release_name-$build_timestamp.iso.md5"
+  mv build.log "$build_release_name-$build_timestamp.iso.log"
 else
-  echo "##### BUILD ERROR #####" 
+  echo "##### BUILD ERROR #####" | tee -a build.log
+  mv build.log "$build_release_name-$build_timestamp.iso.ERROR.log"
+ 
 fi
-mv build.log "$build_release_name-$build_timestamp.iso.log"
