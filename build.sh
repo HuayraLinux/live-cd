@@ -19,6 +19,8 @@ else
   build_release_name="huayra"
 fi
 
+echo "$build_release_name-$build_timestamp" > config/includes.binary/BUILD
+
 lb build 2>&1 |tee -a build.log
 
 if [ -f binary.hybrid.iso ]; then

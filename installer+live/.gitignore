@@ -15,3 +15,4 @@ binary.img
 *.zsync.gz
 *.md5
 *.log
+config/includes.binary/BUILD
