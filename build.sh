@@ -27,6 +27,11 @@ if [ -f binary.hybrid.iso ]; then
   mv binary.hybrid.iso "$build_release_name-$build_timestamp.iso"
   md5sum "$build_release_name-$build_timestamp.iso" > "$build_release_name-$build_timestamp.iso.md5"
   mv build.log "$build_release_name-$build_timestamp.iso.log"
+  mv binary.contents "$build_release_name-$build_timestamp.binary.contents"
+  mv binary.hybrid.iso.zsync.gz "$build_release_name-$build_timestamp.binary.hybrid.iso.zsync.gz"
+  mv binary.packages "$build_release_name-$build_timestamp.binary.packages"
+  mv chroot.packages.install "$build_release_name-$build_timestamp.chroot.packages.install"
+  mv chroot.packages.live "$build_release_name-$build_timestamp.chroot.packages.live"
 else
   echo "##### BUILD ERROR #####" | tee -a build.log
   mv build.log "$build_release_name-$build_timestamp.iso.ERROR.log"
