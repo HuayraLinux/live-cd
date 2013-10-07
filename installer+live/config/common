@@ -110,8 +110,8 @@ LB_TEMPLATES="/usr/share/live/build/templates"
 #_BREAKPOINTS="false"
 
 # $_DEBUG: enable debug
-# (Default: false)
-#_DEBUG="false"
+# (Default: true)
+#_DEBUG="true"
 
 # $_COLOR: enable color
 # (Default: false)
@@ -134,5 +134,5 @@ APT_OPTIONS="--force-yes -y"
 APTITUDE_OPTIONS="--assume-yes"
 DEBOOTSTRAP_OPTIONS=""
 CDEBOOTSTRAP_OPTIONS=""
-GZIP_OPTIONS="-6  --rsyncable"
+GZIP_OPTIONS="-6 --rsyncable"
 ISOHYBRID_OPTIONS=""

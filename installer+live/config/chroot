@@ -22,11 +22,11 @@ LB_INTERACTIVE="false"
 
 # $LB_KEYRING_PACKAGES: set keyring packages
 # (Default: empty)
-LB_KEYRING_PACKAGES="debian-archive-keyring huayra-archive-keyring"
+LB_KEYRING_PACKAGES="debian-archive-keyring"
 
 # $LB_LINUX_FLAVOURS: set kernel flavour to use
 # (Default: autodetected)
-LB_LINUX_FLAVOURS="486 686-pae"
+LB_LINUX_FLAVOURS="686-pae 486"
 
 # $LB_LINUX_PACKAGES: set kernel packages to use
 # (Default: autodetected)
@@ -37,8 +37,8 @@ LB_LINUX_PACKAGES="linux-image"
 LB_SECURITY="true"
 
 # $LB_UPDATES: enable updates updates
-# (Default: false)
-LB_UPDATES="false"
+# (Default: true)
+LB_UPDATES="true"
 
 # $LB_BACKPORTS: enable backports updates
 # (Default: false)

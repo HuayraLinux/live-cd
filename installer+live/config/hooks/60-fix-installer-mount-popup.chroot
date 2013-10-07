@@ -1,8 +1,0 @@
-#!/bin/bash
-
-set -e
-
-MATECONF_CONFIG_SOURCE=`mateconftool-2 --get-default-source`
-CMD="mateconftool-2 --direct --config-source $MATECONF_CONFIG_SOURCE --set"
-echo "Deshabilitando media_automount_open de caja."
-$CMD --type bool /apps/caja/preferences/media_automount_open 0

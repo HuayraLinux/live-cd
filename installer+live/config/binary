@@ -1,24 +1,24 @@
 # config/binary - options for live-build(7), binary stage
 
 # $LB_BINARY_FILESYSTEM: set image filesystem
-# (Default: fat16)
-LB_BINARY_FILESYSTEM="fat16"
+# (Default: fat32)
+LB_BINARY_FILESYSTEM="fat32"
 
 # $LB_BINARY_IMAGES: set image type
 # (Default: iso-hybrid)
 LB_BINARY_IMAGES="iso-hybrid"
 
 # $LB_APT_INDICES: set apt/aptitude generic indices
-# (Default: false)
-LB_APT_INDICES="false"
+# (Default: true)
+LB_APT_INDICES="true"
 
 # $LB_BOOTAPPEND_LIVE: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_LIVE="hostname=huayra username=alumno locales=es_AR.UTF-8 keyboard-layouts=latam"
+LB_BOOTAPPEND_LIVE="boot=live config quiet splash"
 
 # $LB_BOOTAPPEND_INSTALL: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_INSTALL="file=/cdrom/install/preseed.cfg file=/hd-media/install/preseed.cfg"
+LB_BOOTAPPEND_INSTALL=""
 
 # $LB_BOOTAPPEND_LIVE_FAILSAFE: set boot parameters
 # (Default: empty)
@@ -29,16 +29,16 @@ LB_BOOTAPPEND_LIVE_FAILSAFE="boot=live config memtest noapic noapm nodma nomce n
 LB_BOOTLOADER="syslinux"
 
 # $LB_CHECKSUMS: set checksums
-# (Default: sha256)
-LB_CHECKSUMS="sha256"
+# (Default: md5)
+LB_CHECKSUMS="md5"
 
 # $LB_COMPRESSION: set compression
-# (Default: gzip)
-LB_COMPRESSION="gzip"
+# (Default: none)
+LB_COMPRESSION="none"
 
 # $LB_ZSYNC: set zsync
-# (Default: true)
-LB_ZSYNC="true"
+# (Default: false)
+LB_ZSYNC="false"
 
 # ${LB_BUILD_WITH_CHROOT: control if we build binary images chrooted
 # (Default: true)
@@ -54,8 +54,8 @@ LB_DEBIAN_INSTALLER="live"
 LB_DEBIAN_INSTALLER_DISTRIBUTION="wheezy"
 
 # $LB_DEBIAN_INSTALLER_PRESEEDFILE: set debian-installer preseed filename/url
-# (Default: /preseed.cfg)
-LB_DEBIAN_INSTALLER_PRESEEDFILE="/preseed.cfg"
+# (Default: )
+LB_DEBIAN_INSTALLER_PRESEEDFILE=""
 
 # $LB_DEBIAN_INSTALLER_GUI: toggle use of GUI debian-installer
 # (Default: true)
@@ -63,11 +63,11 @@ LB_DEBIAN_INSTALLER_GUI="true"
 
 # $LB_GRUB_SPLASH: set custom grub splash
 # (Default: empty)
-LB_GRUB_SPLASH="huayra.xpm.gz"
+LB_GRUB_SPLASH=""
 
 # $LB_HDD_LABEL: set hdd label
-# (Default: HUAYRA_LIVE)
-LB_HDD_LABEL="HUAYRA_LIVE"
+# (Default: DEBIAN_LIVE)
+LB_HDD_LABEL="DEBIAN_LIVE"
 
 # $LB_HDD_SIZE: set hdd filesystem size
 # (Default: 10000)
@@ -78,8 +78,8 @@ LB_HDD_SIZE="10000"
 LB_ISO_APPLICATION="Huayra GNU/Linux"
 
 # $LB_ISO_PREPARER: set iso preparer
-# (Default: live-build 3.0~a51-1; http://packages.qa.debian.org/live-build)
-LB_ISO_PREPARER="live-build 3.0~a51-1; http://packages.qa.debian.org/live-build"
+# (Default: live-build $VERSION; http://packages.qa.debian.org/live-build)
+LB_ISO_PREPARER="live-build $VERSION; http://packages.qa.debian.org/live-build"
 
 # $LB_ISO_PUBLISHER: set iso publisher
 # (Default: Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar)
@@ -94,12 +94,12 @@ LB_ISO_VOLUME="Huayra GNU/Linux"
 LB_JFFS2_ERASEBLOCK=""
 
 # $LB_MEMTEST: set memtest
-# (Default: none)
-LB_MEMTEST="none"
+# (Default: memtest86+)
+LB_MEMTEST="memtest86+"
 
 # $LB_LOADLIN: set loadlin
-# (Default: true)
-LB_LOADLIN="true"
+# (Default: false)
+LB_LOADLIN="false"
 
 # $LB_WIN32_LOADER: set win32-loader
 # (Default: false)

@@ -17,24 +17,24 @@ LB_PARENT_DISTRIBUTION="wheezy"
 LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="wheezy"
 
 # $LB_PARENT_MIRROR_BOOTSTRAP: set parent mirror to bootstrap from
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_PARENT_MIRROR_BOOTSTRAP="http://127.0.0.1:3142/ftp.debian.org/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_BOOTSTRAP="http://ftp.debian.org/debian/"
 
 # $LB_PARENT_MIRROR_CHROOT: set parent mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_PARENT_MIRROR_CHROOT="http://127.0.0.1:3142/ftp.debian.org/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_CHROOT="http://ftp.debian.org/debian/"
 
 # $LB_PARENT_MIRROR_CHROOT_SECURITY: set security parent mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/security.debian.org/)
-LB_PARENT_MIRROR_CHROOT_SECURITY="http://127.0.0.1:3142/security.debian.org/"
+# (Default: http://security.debian.org/)
+LB_PARENT_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
 
 # $LB_PARENT_MIRROR_CHROOT_UPDATES: set updates parent mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_PARENT_MIRROR_CHROOT_UPDATES="http://127.0.0.1:3142/ftp.debian.org/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_CHROOT_UPDATES="http://ftp.debian.org/debian/"
 
 # $LB_PARENT_MIRROR_CHROOT_BACKPORTS: set backports parent mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/backports.debian.org/debian-backports/)
-LB_PARENT_MIRROR_CHROOT_BACKPORTS="http://127.0.0.1:3142/backports.debian.org/debian-backports/"
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_CHROOT_BACKPORTS="http://ftp.debian.org/debian/"
 
 # $LB_PARENT_MIRROR_BINARY: set parent mirror which ends up in the image
 # (Default: http://ftp.debian.org/debian/)
@@ -49,52 +49,52 @@ LB_PARENT_MIRROR_BINARY_SECURITY="http://security.debian.org/"
 LB_PARENT_MIRROR_BINARY_UPDATES="http://ftp.debian.org/debian/"
 
 # $LB_PARENT_MIRROR_BINARY_BACKPORTS: set backports parent mirror which ends up in the image
-# (Default: http://backports.debian.org/debian-backports/)
-LB_PARENT_MIRROR_BINARY_BACKPORTS="http://backports.debian.org/debian-backports/"
+# (Default: http://http.debian.net/debian/)
+LB_PARENT_MIRROR_BINARY_BACKPORTS="http://http.debian.net/debian/"
 
 # $LB_PARENT_MIRROR_DEBIAN_INSTALLER: set debian-installer parent mirror
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://127.0.0.1:3142/cdn.debian.net/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://ftp.debian.org/debian/"
 
 # $LB_MIRROR_BOOTSTRAP: set mirror to bootstrap from
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_MIRROR_BOOTSTRAP="http://127.0.0.1:3142/ftp.debian.org/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_MIRROR_BOOTSTRAP="http://ftp.debian.org/debian/"
 
 # $LB_MIRROR_CHROOT: set mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_MIRROR_CHROOT="http://127.0.0.1:3142/ftp.debian.org/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_MIRROR_CHROOT="http://ftp.debian.org/debian/"
 
 # $LB_MIRROR_CHROOT_SECURITY: set security mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/security.debian.org/)
-LB_MIRROR_CHROOT_SECURITY="http://127.0.0.1:3142/security.debian.org/"
+# (Default: http://security.debian.org/)
+LB_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
 
 # $LB_MIRROR_CHROOT_UPDATES: set updates mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_MIRROR_CHROOT_UPDATES="http://127.0.0.1:3142/ftp.debian.org/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_MIRROR_CHROOT_UPDATES="http://ftp.debian.org/debian/"
 
 # $LB_MIRROR_CHROOT_BACKPORTS: set backports mirror to fetch packages from
-# (Default: http://127.0.0.1:3142/backports.debian.org/debian-backports/)
-LB_MIRROR_CHROOT_BACKPORTS="http://127.0.0.1:3142/backports.debian.org/debian-backports/"
+# (Default: http://ftp.debian.org/debian/)
+LB_MIRROR_CHROOT_BACKPORTS="http://ftp.debian.org/debian/"
 
 # $LB_MIRROR_BINARY: set mirror which ends up in the image
-# (Default: http://ftp.debian.org/debian/)
-LB_MIRROR_BINARY="http://ftp.debian.org/debian/"
+# (Default: http://http.debian.net/debian/)
+LB_MIRROR_BINARY="http://http.debian.net/debian/"
 
 # $LB_MIRROR_BINARY_SECURITY: set security mirror which ends up in the image
-# (Default: http://127.0.0.1:3142/security.debian.org/)
-LB_MIRROR_BINARY_SECURITY="http://127.0.0.1:3142/security.debian.org/"
+# (Default: http://security.debian.org/)
+LB_MIRROR_BINARY_SECURITY="http://security.debian.org/"
 
 # $LB_MIRROR_BINARY_UPDATES: set updates mirror which ends up in the image
-# (Default: http://ftp.debian.org/debian/)
-LB_MIRROR_BINARY_UPDATES="http://ftp.debian.org/debian/"
+# (Default: http://http.debian.net/debian/)
+LB_MIRROR_BINARY_UPDATES="http://http.debian.net/debian/"
 
 # $LB_MIRROR_BINARY_BACKPORTS: set backports mirror which ends up in the image
-# (Default: http://127.0.0.1:3142/backports.debian.org/debian-backports/)
-LB_MIRROR_BINARY_BACKPORTS="http://127.0.0.1:3142/backports.debian.org/debian-backports/"
+# (Default: http://http.debian.net/debian/)
+LB_MIRROR_BINARY_BACKPORTS="http://http.debian.net/debian/"
 
 # $LB_MIRROR_DEBIAN_INSTALLER: set debian-installer mirror
-# (Default: http://127.0.0.1:3142/ftp.debian.org/debian/)
-LB_MIRROR_DEBIAN_INSTALLER="http://127.0.0.1:3142/ftp.debian.org/debian/"
+# (Default: http://ftp.debian.org/debian/)
+LB_MIRROR_DEBIAN_INSTALLER="http://ftp.debian.org/debian/"
 
 # $LB_ARCHIVES: enable available third-party archives
 # (Default: empty)
