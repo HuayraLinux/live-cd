@@ -4,25 +4,30 @@ set -e
 
 BUILD_DATE=`date`
 BUILD_TIMESTAMP=`date +%Y%m%d%H%M`
+BUILD_VERSION=$BUILD_TIMESTAMP
 PROJECT_NAME='huayra'
+
+if [ -z $VERSION ]; then
+    BUILD_VERSION=$VERSION
+fi
 
 echo $BUILD_DATE > config/includes.binary/BUILD
 echo $BUILD_DATE > config/includes.chroot/BUILD
 
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f binary.hybrid.iso ]; then
-  mv binary.hybrid.iso $PROJECT_NAME-$BUILD_TIMESTAMP.iso
-  mv binary.contents $PROJECT_NAME-$BUILD_TIMESTAMP.binary.contents
-  mv binary.packages $PROJECT_NAME-$BUILD_TIMESTAMP.binary.packages
-  mv build.log $PROJECT_NAME-$BUILD_TIMESTAMP.build.log
-  mv chroot.packages.install $PROJECT_NAME-$BUILD_TIMESTAMP.chroot.packages.install
-  mv chroot.packages.live $PROJECT_NAME-$BUILD_TIMESTAMP.chroot.packages.live
-  md5sum $PROJECT_NAME-$BUILD_TIMESTAMP.iso > $PROJECT_NAME-$BUILD_TIMESTAMP.iso.md5
+  mv binary.hybrid.iso $PROJECT_NAME-$BUILD_VERSION.iso
+  mv binary.contents $PROJECT_NAME-$BUILD_VERSION.binary.contents
+  mv binary.packages $PROJECT_NAME-$BUILD_VERSION.binary.packages
+  mv build.log $PROJECT_NAME-$BUILD_VERSION.build.log
+  mv chroot.packages.install $PROJECT_NAME-$BUILD_VERSION.chroot.packages.install
+  mv chroot.packages.live $PROJECT_NAME-$BUILD_VERSION.chroot.packages.live
+  md5sum $PROJECT_NAME-$BUILD_VERSION.iso > $PROJECT_NAME-$BUILD_VERSION.iso.md5
 else
-  test -f binary.contents && mv binary.contents $PROJECT_NAME-$BUILD_TIMESTAMP.binary.contents.error
-  test -f binary.packages && mv binary.packages $PROJECT_NAME-$BUILD_TIMESTAMP.binary.packages.error
-  test -f build.log && mv build.log $PROJECT_NAME-$BUILD_TIMESTAMP.build.log.error
-  test -f chroot.packages.install && mv chroot.packages.install $PROJECT_NAME-$BUILD_TIMESTAMP.chroot.packages.install.error
-  test -f chroot.packages.live && mv chroot.packages.live $PROJECT_NAME-$BUILD_TIMESTAMP.chroot.packages.live.error
+  test -f binary.contents && mv binary.contents $PROJECT_NAME-$BUILD_VERSION.binary.contents.error
+  test -f binary.packages && mv binary.packages $PROJECT_NAME-$BUILD_VERSION.binary.packages.error
+  test -f build.log && mv build.log $PROJECT_NAME-$BUILD_VERSION.build.log.error
+  test -f chroot.packages.install && mv chroot.packages.install $PROJECT_NAME-$BUILD_VERSION.chroot.packages.install.error
+  test -f chroot.packages.live && mv chroot.packages.live $PROJECT_NAME-$BUILD_VERSION.chroot.packages.live.error
 fi
 
