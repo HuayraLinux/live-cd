@@ -16,3 +16,9 @@ chroot/
 *.md5
 *.log
 config/includes.binary/BUILD
+config/includes.chroot/BUILD
+config/binary
+config/bootstrap
+config/chroot
+config/common
+config/source
