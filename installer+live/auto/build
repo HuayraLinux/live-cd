@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+BUILD_DATE=`date`
+echo $BUILD_DATE > config/includes.binary/BUILD
+echo $BUILD_DATE > config/includes.chroot/BUILD
+
+lb build noauto "${@}" 2>&1 | tee build.log
