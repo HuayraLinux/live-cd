@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo " Claves por defecto de huayra "
-echo "root:alumno" | chpasswd
-echo "alumno:alumno" | chpasswd
