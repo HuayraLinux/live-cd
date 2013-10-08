@@ -33,9 +33,6 @@ lb config noauto \
   --parent-mirror-chroot $MIRROR \
   --parent-mirror-chroot-security $MIRROR_SECURITY \
   --parent-mirror-chroot-updates $MIRROR \
-  --parent-mirror-binary $MIRROR \
-  --parent-mirror-binary-security $MIRROR_SECURITY \
-  --parent-mirror-binary-updates $MIRROR \
   --mirror-debian-installer $MIRROR \
   "${@}"
 
