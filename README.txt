@@ -5,6 +5,7 @@ Huayra GNU/Linux - Instalador en LiveCD
   es necesario tener instalado los siguientes paquetes:
 
   live-build
+  md5sum
 
 * Opcionalmente, pero recomendado:
 
