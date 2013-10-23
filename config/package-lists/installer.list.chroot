@@ -5,3 +5,4 @@ initscripts
 debian-installer-launcher
 libgnome2-perl
 grub-pc
+linux-image-686-pae

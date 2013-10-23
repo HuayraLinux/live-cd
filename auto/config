@@ -26,7 +26,7 @@ lb config noauto \
   --iso-application 'Huayra GNU/Linux' \
   --iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
   --iso-volume 'Huayra GNU/Linux' \
-  -k '686-pae 486' \
+  -k '486 686-pae' \
   --zsync false \
   --loadlin false \
   --win32-loader false \
