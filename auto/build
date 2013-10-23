@@ -7,12 +7,12 @@ BUILD_TIMESTAMP=`date +%Y%m%d%H%M`
 BUILD_VERSION=$BUILD_TIMESTAMP
 PROJECT_NAME='huayra'
 
-if [ -z $VERSION ]; then
-    BUILD_VERSION=$VERSION
+if [ ! -z "$RELEASE_VERSION" ]; then
+    BUILD_VERSION="$RELEASE_VERSION"
 fi
-
-echo $BUILD_DATE > config/includes.binary/BUILD
-echo $BUILD_DATE > config/includes.chroot/BUILD
+echo "Versión: $BUILD_VERSION" > config/includes.binary/BUILD
+echo $BUILD_DATE >> config/includes.binary/BUILD
+cp -vf config/includes.binary/BUILD config/includes.chroot/BUILD
 
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f binary.hybrid.iso ]; then
