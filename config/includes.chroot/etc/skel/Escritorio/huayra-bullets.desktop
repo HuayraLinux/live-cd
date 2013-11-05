@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Primeros Pasos en Huayra
-Comment=Primeros Pasos en Huayra
-Exec=/usr/bin/huayra-bullets
-Terminal=false
-Type=Application
-Icon=huayra-bullets
-Categories=Documentation;
