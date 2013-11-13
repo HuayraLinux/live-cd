@@ -5,3 +5,6 @@ huayra-conig
 huayra-tpm
 huayra-tda
 notification-daemon
+huayra-mdm
+huayra-mdm-themes
+update-notifier
