@@ -9,32 +9,68 @@ else
   MIRROR_SECURITY="http://$CACHER/security.debian.org/"
 fi
 
+if [ -z "$ARCH" ]; then
+    echo -e "ERROR: \n"
+    echo -e "Se debe seleccionar la arquitectura usando la variable ARCH (i386|amd64)"
+    echo -e "ejemplo: \n\tARCH=amd64 lb config\n"
+    exit 1
+fi
 
-lb config noauto \
-  --apt apt \
-  --apt-options '--force-yes -y' \
-  --apt-recommends false \
-  --apt-source-archives true \
-  --architectures i386 \
-  --archive-areas 'main contrib non-free' \
-  --keyring-packages 'debian-archive-keyring mate-archive-keyring huayra-archive-keyring' \
-  --binary-images iso-hybrid \
-  --debian-installer live \
-  --debian-installer-gui true \
-  --debug \
-  --distribution wheezy \
-  --iso-application 'Huayra GNU/Linux' \
-  --iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
-  --iso-volume 'Huayra GNU/Linux' \
-  -k '486 686-pae' \
-  --zsync false \
-  --loadlin false \
-  --win32-loader false \
-  --mirror-bootstrap $MIRROR \
-  --parent-mirror-chroot $MIRROR \
-  --parent-mirror-chroot-security $MIRROR_SECURITY \
-  --parent-mirror-chroot-updates $MIRROR \
-  --mirror-debian-installer $MIRROR \
-  "${@}"
+if  [ "$ARCH" == "amd64" ]; then
 
+    lb config noauto \
+    --apt apt \
+    --apt-options '--force-yes -y' \
+    --apt-recommends false \
+    --apt-source-archives true \
+    --architectures amd64 \
+    --archive-areas 'main contrib non-free' \
+    --keyring-packages 'debian-archive-keyring mate-archive-keyring huayra-archive-keyring' \
+    --binary-images iso-hybrid \
+    --debian-installer live \
+    --debian-installer-gui true \
+    --debug \
+    --distribution wheezy \
+    --iso-application 'Huayra GNU/Linux' \
+    --iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
+    --iso-volume 'Huayra GNU/Linux' \
+    --zsync false \
+    --loadlin false \
+    --win32-loader false \
+    --mirror-bootstrap $MIRROR \
+    --parent-mirror-chroot $MIRROR \
+    --parent-mirror-chroot-security $MIRROR_SECURITY \
+    --parent-mirror-chroot-updates $MIRROR \
+    --mirror-debian-installer $MIRROR \
+    "${@}"
 
+elif [ "$ARCH" == "i386" ]; then
+
+    lb config noauto \
+	--apt apt \
+	--apt-options '--force-yes -y' \
+	--apt-recommends false \
+	--apt-source-archives true \
+	--architectures i386 \
+	--linux-flavours '486 686-pae' \
+	--archive-areas 'main contrib non-free' \
+	--keyring-packages 'debian-archive-keyring mate-archive-keyring huayra-archive-keyring' \
+	--binary-images iso-hybrid \
+	--debian-installer live \
+	--debian-installer-gui true \
+	--debug \
+	--distribution wheezy \
+	--iso-application 'Huayra GNU/Linux' \
+	--iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
+	--iso-volume 'Huayra GNU/Linux' \
+	--zsync false \
+	--loadlin false \
+	--win32-loader false \
+	--mirror-bootstrap $MIRROR \
+	--parent-mirror-chroot $MIRROR \
+	--parent-mirror-chroot-security $MIRROR_SECURITY \
+	--parent-mirror-chroot-updates $MIRROR \
+	--mirror-debian-installer $MIRROR \
+	"${@}"
+
+fi

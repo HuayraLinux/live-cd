@@ -1,3 +1,10 @@
-siano-mdtv-dkms
 firmware-siano-rio
+siano-mdtv-dkms
+
+#if ARCHITECTURES i386
 linux-headers-486
+#endif
+
+#if ARCHITECTURES amd64
+linux-headers-amd64
+#endif
