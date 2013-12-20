@@ -10,9 +10,17 @@ PROJECT_NAME="huayra-$ARCH"
 if [ ! -z "$RELEASE_VERSION" ]; then
     BUILD_VERSION="$RELEASE_VERSION"
 fi
+
+# Archivo BUILD
 echo "Versión: $BUILD_VERSION" > config/includes.binary/BUILD
 echo $BUILD_DATE >> config/includes.binary/BUILD
 cp -vf config/includes.binary/BUILD config/includes.chroot/BUILD
+
+# Templates al binary
+cat config/templates/isolinux/menu.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/menu.cfg
+cat config/templates/isolinux/live-$ARCH.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/live.cfg
+cat config/templates/README | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/README
+
 
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f binary.hybrid.iso ]; then

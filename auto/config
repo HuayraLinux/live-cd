@@ -16,6 +16,8 @@ if [ -z "$ARCH" ]; then
     exit 1
 fi
 
+# Build segun arquitectura
+
 if  [ "$ARCH" == "amd64" ]; then
 
     lb config noauto \

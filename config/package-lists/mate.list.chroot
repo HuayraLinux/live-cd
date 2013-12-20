@@ -5,9 +5,9 @@ notification-daemon
 huayra-mdm
 huayra-mdm-themes
 update-notifier
+huayra-tda
 
 #if ARCHITECTURES i386
-huayra-conig
-huayra-tpm
-huayra-tda
+    huayra-conig
+    huayra-tpm
 #endif

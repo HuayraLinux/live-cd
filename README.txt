@@ -14,17 +14,24 @@ Huayra GNU/Linux - Instalador en LiveCD
 
 * Para configurar algún parámetro del build:
 
-  sudo lb config
+  sudo lb config --help
 
-* Si se usa el cacher se debe cagar la variable con host y port del mismo:
+* Variables para el build:
 
-  sudo CACHER=127.0.0.1:3142 lb config
+ARCH (obligatorio): Se debe definir de que arquitectura se genera la iso (amd64 o i386).
 
-* Para armar las imágenes iso, se debe ejecutar:
+  sudo ARCH=amd64 lb build
 
-  sudo VERSION=xxxxx lb build
+CACHER: Si se usa el apt-cacher se debe cagar la variable con host y port del mismo:
 
-  (Donde xxxxxx es un número o nombre de versión, en caso de no usar la variable, la misma es un timestamp)
+  sudo ARCH=amd64 CACHER=127.0.0.1:3142 lb build
+
+RELEASE_VERSION: Version del build:
+
+  sudo ARCH=amd64 CACHER=127.0.0.1:3142 RELEASE_VERSION=2.0beta lb build
+
+  (la versión es un texto o número, en caso de no usar la variable, la misma es un timestamp
+   ejemplo: huayra-amd64-201312231402.iso)
 
 * Para limpiar archivos del build y cache:
 
@@ -34,6 +41,5 @@ Huayra GNU/Linux - Instalador en LiveCD
 * Para limpiar completamente el entorno:
 
   sudo lb clean --purge
-
 
 En caso de ser root no hace falta usar sudo.
