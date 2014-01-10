@@ -28,7 +28,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --architectures amd64 \
     --archive-areas 'main contrib non-free' \
     --keyring-packages 'debian-archive-keyring mate-archive-keyring huayra-archive-keyring' \
-    --binary-images iso-hybrid \
+    --binary-images iso \
     --debian-installer live \
     --debian-installer-gui true \
     --debug \

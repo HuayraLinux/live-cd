@@ -19,6 +19,7 @@ cp -vf config/includes.binary/BUILD config/includes.chroot/BUILD
 # Templates al binary
 cat config/templates/isolinux/menu.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/menu.cfg
 cat config/templates/isolinux/live-$ARCH.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/live.cfg
+cat config/templates/isolinux/isolinux-$ARCH.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/isolinux.cfg
 cat config/templates/README | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/README
 
 
