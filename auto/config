@@ -27,10 +27,11 @@ if  [ "$ARCH" == "amd64" ]; then
     --apt-source-archives true \
     --architectures amd64 \
     --archive-areas 'main contrib non-free' \
-    --keyring-packages 'debian-archive-keyring mate-archive-keyring huayra-archive-keyring' \
+    --keyring-packages 'debian-archive-keyring huayra-archive-keyring' \
     --binary-images iso \
     --debian-installer live \
     --debian-installer-gui true \
+    --checksums md5 \
     --debug \
     --distribution wheezy \
     --iso-application 'Huayra GNU/Linux' \
@@ -42,7 +43,6 @@ if  [ "$ARCH" == "amd64" ]; then
     --mirror-bootstrap $MIRROR \
     --parent-mirror-chroot $MIRROR \
     --parent-mirror-chroot-security $MIRROR_SECURITY \
-    --parent-mirror-chroot-updates $MIRROR \
     --mirror-debian-installer $MIRROR \
     "${@}"
 
@@ -56,10 +56,12 @@ elif [ "$ARCH" == "i386" ]; then
 	--architectures i386 \
 	--linux-flavours '486 686-pae' \
 	--archive-areas 'main contrib non-free' \
-	--keyring-packages 'debian-archive-keyring mate-archive-keyring huayra-archive-keyring' \
+	--keyring-packages 'debian-archive-keyring huayra-archive-keyring' \
+	--bootappend-live 'hostname=huayra' \
 	--binary-images iso-hybrid \
 	--debian-installer live \
 	--debian-installer-gui true \
+	--checksums md5 \
 	--debug \
 	--distribution wheezy \
 	--iso-application 'Huayra GNU/Linux' \
@@ -71,7 +73,6 @@ elif [ "$ARCH" == "i386" ]; then
 	--mirror-bootstrap $MIRROR \
 	--parent-mirror-chroot $MIRROR \
 	--parent-mirror-chroot-security $MIRROR_SECURITY \
-	--parent-mirror-chroot-updates $MIRROR \
 	--mirror-debian-installer $MIRROR \
 	"${@}"
 

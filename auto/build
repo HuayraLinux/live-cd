@@ -24,18 +24,21 @@ cat config/templates/README | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e 
 
 
 lb build noauto "${@}" 2>&1 | tee build.log
-if [ -f binary.hybrid.iso ]; then
-  mv binary.hybrid.iso $PROJECT_NAME-$BUILD_VERSION.iso
-  mv binary.contents $PROJECT_NAME-$BUILD_VERSION.binary.contents
-  mv binary.packages $PROJECT_NAME-$BUILD_VERSION.binary.packages
-  mv build.log $PROJECT_NAME-$BUILD_VERSION.build.log
+if [ -f live-image-$ARCH.hybrid.iso ]; then
+  mv live-image-$ARCH.hybrid.iso $PROJECT_NAME-$BUILD_VERSION.iso
+  mv live-image-$ARCH.contents $PROJECT_NAME-$BUILD_VERSION.contents
+  mv live-image-$ARCH.packages $PROJECT_NAME-$BUILD_VERSION.packages
+  mv live-image-$ARCH.files $PROJECT_NAME-$BUILD_VERSION.files
+  mv chroot.files $PROJECT_NAME-$BUILD_VERSION.chroot.files
   mv chroot.packages.install $PROJECT_NAME-$BUILD_VERSION.chroot.packages.install
   mv chroot.packages.live $PROJECT_NAME-$BUILD_VERSION.chroot.packages.live
-  md5sum $PROJECT_NAME-$BUILD_VERSION.iso > $PROJECT_NAME-$BUILD_VERSION.iso.md5
+  mv build.log $PROJECT_NAME-$BUILD_VERSION.build.log
 else
-  test -f binary.contents && mv binary.contents $PROJECT_NAME-$BUILD_VERSION.binary.contents.error
-  test -f binary.packages && mv binary.packages $PROJECT_NAME-$BUILD_VERSION.binary.packages.error
+  test -f live-image-$ARCH.contents && mv live-image-$ARCH.contents $PROJECT_NAME-$BUILD_VERSION.contents.error
+  test -f live-image-$ARCH.packages && mv live-image-$ARCH.packages $PROJECT_NAME-$BUILD_VERSION.packages.error
   test -f build.log && mv build.log $PROJECT_NAME-$BUILD_VERSION.build.log.error
+  test -f live-image-$ARCH.files && mv live-image-$ARCH.files $PROJECT_NAME-$BUILD_VERSION.files.error
+  test -f chroot.files && mv chroot.files $PROJECT_NAME-$BUILD_VERSION.chroot.files.error
   test -f chroot.packages.install && mv chroot.packages.install $PROJECT_NAME-$BUILD_VERSION.chroot.packages.install.error
   test -f chroot.packages.live && mv chroot.packages.live $PROJECT_NAME-$BUILD_VERSION.chroot.packages.live.error
 fi

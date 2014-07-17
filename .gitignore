@@ -24,3 +24,7 @@ config/bootstrap
 config/chroot
 config/common
 config/source
+*.chroot.files
+*.contents
+*.files
+*.packages
