@@ -4,6 +4,4 @@ huayra-base
 huayra-mdm
 huayra-mdm-themes
 huayra-conig
-#if ARCHITECTURES i386
 huayra-tpm
-#endif

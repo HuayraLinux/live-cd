@@ -3,5 +3,7 @@ update-notifier
 #if ARCHITECTURES i386
 miescritorio
 programa2mp
-tbo
 #endif
+tbo
+huayra-caripela
+cowsay
