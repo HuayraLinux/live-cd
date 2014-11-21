@@ -54,7 +54,6 @@ elif [ "$ARCH" == "i386" ]; then
 	--apt-recommends false \
 	--apt-source-archives true \
 	--architectures i386 \
-	--linux-flavours '486 686-pae' \
 	--archive-areas 'main contrib non-free' \
 	--keyring-packages 'debian-archive-keyring huayra-archive-keyring' \
 	--bootappend-live 'hostname=huayra' \
@@ -67,6 +66,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--iso-application 'Huayra GNU/Linux' \
 	--iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
 	--iso-volume 'Huayra GNU/Linux' \
+	-k "486 686-pae" \
 	--zsync false \
 	--loadlin false \
 	--win32-loader false \

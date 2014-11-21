@@ -3,3 +3,6 @@ deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra pampero main contrib n
 
 deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ pampero-updates main contrib non-free
 deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra pampero-updates main contrib non-free
+
+deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ pampero-proposed main contrib non-free
+deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra pampero-proposed main contrib non-free
