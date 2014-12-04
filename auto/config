@@ -33,7 +33,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --debian-installer-gui true \
     --checksums md5 \
     --debug \
-    --distribution wheezy \
+    --distribution jessie \
     --iso-application 'Huayra GNU/Linux' \
     --iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
     --iso-volume 'Huayra GNU/Linux' \
@@ -63,7 +63,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--debian-installer-gui true \
 	--checksums md5 \
 	--debug \
-	--distribution wheezy \
+	--distribution jessie \
 	--iso-application 'Huayra GNU/Linux' \
 	--iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
 	--iso-volume 'Huayra GNU/Linux' \

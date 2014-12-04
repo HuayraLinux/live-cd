@@ -1,5 +1,5 @@
-deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ pampero main contrib non-free
-deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra pampero main contrib non-free
+deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ sud main contrib non-free
+deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra sud main contrib non-free
 
-deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ pampero-updates main contrib non-free
-deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra pampero-updates main contrib non-free
+deb http://repo.huayra.conectarigualdad.gob.ar/huayra/ sud-updates main contrib non-free
+deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra sud-updates main contrib non-free

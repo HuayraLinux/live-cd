@@ -24,7 +24,9 @@ config/bootstrap
 config/chroot
 config/common
 config/source
+config/build
 *.chroot.files
 *.contents
 *.files
 *.packages
+*.log.error
