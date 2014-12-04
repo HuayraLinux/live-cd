@@ -42,8 +42,10 @@ if  [ "$ARCH" == "amd64" ]; then
     --win32-loader false \
     --mirror-bootstrap $MIRROR \
     --parent-mirror-chroot $MIRROR \
+    --parent-mirror-binary http://ftp.debian.org/debian/ \
     --parent-mirror-chroot-security $MIRROR_SECURITY \
     --mirror-debian-installer $MIRROR \
+    --mirror-binary http://ftp.debian.org/debian/ \
     "${@}"
 
 elif [ "$ARCH" == "i386" ]; then
@@ -72,8 +74,10 @@ elif [ "$ARCH" == "i386" ]; then
 	--win32-loader false \
 	--mirror-bootstrap $MIRROR \
 	--parent-mirror-chroot $MIRROR \
+	--parent-mirror-binary http://ftp.debian.org/debian/ \
 	--parent-mirror-chroot-security $MIRROR_SECURITY \
 	--mirror-debian-installer $MIRROR \
+        --mirror-binary http://ftp.debian.org/debian/ \
 	"${@}"
 
 fi
