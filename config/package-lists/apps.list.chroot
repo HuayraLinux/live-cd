@@ -1,9 +1,9 @@
 notification-daemon
 update-notifier
 #if ARCHITECTURES i386
-miescritorio
 programa2mp
 #endif
 tbo
 huayra-caripela
 cowsay
+conectar-educativo
