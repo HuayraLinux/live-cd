@@ -18,6 +18,7 @@ chroot/
 config/includes.binary/BUILD
 config/includes.binary/README
 config/includes.binary/isolinux/menu.cfg
+config/includes.binary/isolinux/live.cfg
 config/includes.chroot/BUILD
 config/binary
 config/bootstrap
