@@ -1,7 +1,7 @@
 [Image]
 Architecture: i386
 Archive-Areas: main contrib non-free
-Distribution: wheezy
+Distribution: jessie
 Mirror-Bootstrap: http://127.0.0.1:3142/ftp.debian.org/debian/
 
 [FIXME]
