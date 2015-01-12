@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
@@ -11,17 +11,27 @@ if [ ! -z "$RELEASE_VERSION" ]; then
     BUILD_VERSION="$RELEASE_VERSION"
 fi
 
+#
+# helper para usar archivos de plantillas
+#
+function tpl {
+    # $origen es relativo a config/templates
+    origen=$1
+    # $destino es relativo a la raiz del proyecto (donde se encuentraq el direction config)
+    destino=$2
+    cat config/templates/$origen | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" -e "s/{{ARCH}}/$ARCH/" > $destino
+}
+
 # Archivo BUILD
 echo "Versión: $BUILD_VERSION" > config/includes.binary/BUILD
 echo $BUILD_DATE >> config/includes.binary/BUILD
 cp -vf config/includes.binary/BUILD config/includes.chroot/BUILD
 
 # Templates al binary
-cat config/templates/isolinux/menu.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/menu.cfg
-cat config/templates/isolinux/live-$ARCH.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/live.cfg
-cat config/templates/isolinux/isolinux-$ARCH.cfg | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/isolinux/isolinux.cfg
-cat config/templates/README | sed -e "s/{{VERSION}}/$RELEASE_VERSION/" | sed -e "s/{{ARCH}}/$ARCH/"  > config/includes.binary/README
-
+tpl isolinux/menu.cfg config/includes.binary/isolinux/menu.cfg
+tpl isolinux/live-$ARCH.cfg config/includes.binary/isolinux/live.cfg
+tpl isolinux/isolinux-$ARCH.cfg config/includes.binary/isolinux/isolinux.cfg
+tpl README config/includes.binary/README
 
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f live-image-$ARCH.hybrid.iso ]; then
