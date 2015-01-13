@@ -12,6 +12,16 @@ if [ ! -z "$RELEASE_VERSION" ]; then
 fi
 
 #
+# Habilitamos paquetes para los desarrolladores
+#
+rm -f config/packages-lists/debug.list-chroot
+if [ "$DEBUG" = "1" ];then
+    echo "virtualbox-guest-x11" >>config/package-lists/debug.list.chroot
+    echo "virtualbox-guest-dkms" >>config/package-lists/debug.list.chroot
+    echo "open-vm-tools-desktop" >>config/package-lists/debug.list.chroot
+    echo "open-vm-tools-dkms" >>config/package-lists/debug.list.chroot
+fi
+#
 # helper para usar archivos de plantillas
 #
 function tpl {

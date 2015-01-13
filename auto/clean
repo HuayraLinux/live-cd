@@ -4,6 +4,10 @@ set -e
 
 lb clean noauto "${@}"
 
+# Eliminando paquetes de debug
+rm -f config/package-lists/debug.list.chroot
+
+# Limpiando configs y log
 rm -f config/binary config/bootstrap config/chroot config/common config/source
 rm -f build.log
 

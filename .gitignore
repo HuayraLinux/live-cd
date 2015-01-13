@@ -31,3 +31,4 @@ config/build
 *.files
 *.packages
 *.log.error
+config/package-lists/debug.list.chroot

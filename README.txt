@@ -16,7 +16,8 @@ Huayra GNU/Linux - Instalador en LiveCD
 
   sudo lb config --help
 
-* Variables para el build:
+Variables para el build
+-----------------------
 
 ARCH (obligatorio): Se debe definir de que arquitectura se genera la iso (amd64 o i386).
 
@@ -32,6 +33,15 @@ RELEASE_VERSION: Version del build:
 
   (la versión es un texto o número, en caso de no usar la variable, la misma es un timestamp
    ejemplo: huayra-amd64-201312231402.iso)
+
+DEBUG: Valor 1 para habilitar opciones de paquetes de debug:
+
+  sudo ARCH=amd64 CACHER=127.0.0.1:3142 RELEASE_VERSION=2.0beta DEBUG=1 lb build
+
+  (Con la variables de DEBUG por ejemplo se agregan los paquetes guest para virtualbox y vmware)
+
+Limpieza del build
+------------------
 
 * Para limpiar archivos del build y cache:
 

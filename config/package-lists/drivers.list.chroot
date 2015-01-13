@@ -1,5 +1,4 @@
 firmware-siano-rio
 #if ARCHITECTURES i386
-linux-headers-486
 siano-mdtv-dkms
 #endif
