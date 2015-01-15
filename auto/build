@@ -40,7 +40,6 @@ cp -vf config/includes.binary/BUILD config/includes.chroot/BUILD
 # Templates al binary
 tpl isolinux/menu.cfg config/includes.binary/isolinux/menu.cfg
 tpl isolinux/live-$ARCH.cfg config/includes.binary/isolinux/live.cfg
-tpl isolinux/isolinux-$ARCH.cfg config/includes.binary/isolinux/isolinux.cfg
 tpl README config/includes.binary/README
 
 lb build noauto "${@}" 2>&1 | tee build.log

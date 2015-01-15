@@ -11,3 +11,8 @@ rm -f config/package-lists/debug.list.chroot
 rm -f config/binary config/bootstrap config/chroot config/common config/source
 rm -f build.log
 
+# limpiando arcivos generados por templates
+rm -f config/includes.binary/isolinux/live.cfg
+rm -f config/includes.binary/isolinux/menu.cfg
+
+
