@@ -46,6 +46,8 @@ if  [ "$ARCH" == "amd64" ]; then
     --parent-mirror-chroot $MIRROR \
     --parent-mirror-chroot-security $MIRROR_SECURITY \
     --mirror-debian-installer $MIRROR \
+    --security true \
+    --updates true \
     "${@}"
 
 elif [ "$ARCH" == "i386" ]; then
@@ -77,6 +79,8 @@ elif [ "$ARCH" == "i386" ]; then
 	--parent-mirror-chroot $MIRROR \
 	--parent-mirror-chroot-security $MIRROR_SECURITY \
 	--mirror-debian-installer $MIRROR \
+	--security true \
+	--updates true \
 	"${@}"
 
 fi
