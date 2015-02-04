@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#
-# Eliminamos el archivo /etc/hosts ya que el hook 0020-hostname
-# No esta poniendo el $LIVE_HOSTNAME en /etc/hosts y falla el sudo
-#
-rm /etc/hosts
