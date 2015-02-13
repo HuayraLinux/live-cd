@@ -5,5 +5,4 @@ initscripts
 debian-installer-launcher
 libgnome2-perl
 grub-pc
-kexec-tools
 
