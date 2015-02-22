@@ -42,6 +42,9 @@ tpl isolinux/menu.cfg config/includes.binary/isolinux/menu.cfg
 tpl isolinux/live-$ARCH.cfg config/includes.binary/isolinux/live.cfg
 tpl README config/includes.binary/README
 
+# Soporte UEFI
+cp -a uefi/$ARCH/ config/includes.binary/
+
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f live-image-$ARCH.hybrid.iso ]; then
   mv live-image-$ARCH.hybrid.iso $PROJECT_NAME-$BUILD_VERSION.iso
