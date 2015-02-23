@@ -16,6 +16,6 @@ rm -f config/includes.binary/isolinux/live.cfg
 rm -f config/includes.binary/isolinux/menu.cfg
 
 # limpiando archivos de uefi
-rm -f config/includes.binary/.disk
-rm -f config/includes.binary/boot
-rm -f config/includes.binary/efi
+rm -rf config/includes.binary/.disk
+rm -rf config/includes.binary/boot
+rm -rf config/includes.binary/efi
