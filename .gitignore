@@ -32,3 +32,4 @@ config/build
 *.packages
 *.log.error
 config/package-lists/debug.list.chroot
+buildall.sh

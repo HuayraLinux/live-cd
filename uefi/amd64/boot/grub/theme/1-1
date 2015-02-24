@@ -1,5 +1,5 @@
 title-color: "white"
-title-text: "Debian GNU/Linux testing"
+title-text: "Huayra GNU/Linux"
 title-font: "Sans Regular 16"
 desktop-color: "black"
 desktop-image: "/isolinux/splash.png"
@@ -14,12 +14,12 @@ terminal-font: "Sans Regular 12"
   height = 100
   + hbox {
     left = 0
-    + label {text = "Debian GNU/Linux UEFI Installer menu" font = "Sans 10" color = "#d3d3d3" align = "left"}
+    + label {text = "Huayra GNU/Linux UEFI" font = "Sans 10" color = "#d3d3d3" align = "left"}
   }
   + hbox {
     left = 0
     + label {text = " >" font = "Sans 10" color = "white" align = "left"}
-    + label {text = "Advanced options" font = "Sans 10" color = "#d3d3d3" align = "left"}
+    + label {text = "Opciones avanzadas" font = "Sans 10" color = "#d3d3d3" align = "left"}
   }
 }
 

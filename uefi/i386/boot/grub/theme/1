@@ -1,9 +1,9 @@
-title-color: "white"
+title-color: "black"
 title-text: "Debian GNU/Linux testing"
 title-font: "Sans Regular 16"
 desktop-color: "black"
 desktop-image: "/isolinux/splash.png"
-message-color: "white"
+message-color: "black"
 message-bg-color: "black"
 terminal-font: "Sans Regular 12"
 
@@ -14,7 +14,7 @@ terminal-font: "Sans Regular 12"
   height = 100
   + hbox {
     left = 0
-    + label {text = "Debian GNU/Linux UEFI Installer menu" font = "Sans 10" color = "#d3d3d3" align = "left"}
+    + label {text = "Debian GNU/Linux UEFI Installer menu" font = "Sans 10" color = "#000000" align = "left"}
   }
 }
 
@@ -24,7 +24,7 @@ terminal-font: "Sans Regular 12"
   top = 200
   height = 200
   item_font = "Sans Regular 12"
-  item_color = #d3d3d3
+  item_color = #000000
   selected_item_color = "white"
   item_height = 20
   item_padding = 15
@@ -38,15 +38,15 @@ terminal-font: "Sans Regular 12"
     top = 0
     left = 20%
     + label {text = "Enter: " font = "Sans 10" color = "white" align = "left"}
-    + label {text = "Select             " font = "Sans 10" color = "#d3d3d3" align = "left"}
+    + label {text = "Select             " font = "Sans 10" color = "#000000" align = "left"}
   }
   + hbox {
     top = 0
     left = 20%
     + label {text = "E:     " font = "Sans 10" color = "white" align = "left"}
-    + label {text = "Edit Selection     " font = "Sans 10" color = "#d3d3d3" align = "left"}
+    + label {text = "Edit Selection     " font = "Sans 10" color = "#000000" align = "left"}
     + label {text = "           " font = "Sans 10" color = "white" align = "left"}
     + label {text = "C:     " font = "Sans 10" color = "white" align = "left"}
-    + label {text = "GRUB Command line" font = "Sans 10" color = "#d3d3d3" align = "left"}
+    + label {text = "GRUB Command line" font = "Sans 10" color = "#000000" align = "left"}
   }  
 }
