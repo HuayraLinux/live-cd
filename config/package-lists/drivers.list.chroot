@@ -1,6 +1,2 @@
 firmware-siano-rio
-#if ARCHITECTURES i386
-siano-mdtv-dkms
-#endif
-rtl-8723-dkms
 firmware-realtek

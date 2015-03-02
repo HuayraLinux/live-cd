@@ -43,7 +43,20 @@ tpl isolinux/live-$ARCH.cfg config/includes.binary/isolinux/live.cfg
 tpl README config/includes.binary/README
 
 # Soporte UEFI
-cp -a uefi/$ARCH/* config/includes.binary/
+if [ "$EFI" = "1" ]; then 
+    cp -a uefi/$ARCH/* config/includes.binary/
+    echo -e "grub-efi" > config/package-lists/grub.list.chroot
+    case "$ARCH" in
+      amd64)
+        echo -e "grub-efi-amd64" >> config/package-lists/grub.list.chroot
+        ;;
+      i386)
+        echo -e "grub-efi-ia32" >> config/package-lists/grub.list.chroot
+        ;;
+    esac
+else
+echo -e "grub-pc" > config/package-lists/grub.list.chroot
+fi
 
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f live-image-$ARCH.hybrid.iso ]; then

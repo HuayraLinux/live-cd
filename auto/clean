@@ -19,3 +19,4 @@ rm -f config/includes.binary/isolinux/menu.cfg
 rm -rf config/includes.binary/.disk
 rm -rf config/includes.binary/boot
 rm -rf config/includes.binary/efi
+rm -f config/package-lists/grub.chroot

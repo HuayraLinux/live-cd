@@ -40,6 +40,10 @@ DEBUG: Valor 1 para habilitar opciones de paquetes de debug:
 
   (Con la variables de DEBUG por ejemplo se agregan los paquetes guest para virtualbox y vmware)
 
+EFI: Valor 1 para crear una iso con los paquetes grub-efi en vez de grub-pc
+
+  sudo ARCH=amd64 CACHER=127.0.0.1:3142 RELEASE_VERSION=2.0beta EFI=1 lb build
+
 Limpieza del build
 ------------------
 

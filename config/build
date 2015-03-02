@@ -1,5 +1,5 @@
 [Image]
-Architecture: i386
+Architecture: amd64
 Archive-Areas: main contrib non-free
 Distribution: jessie
 Mirror-Bootstrap: http://127.0.0.1:3142/ftp.debian.org/debian/
