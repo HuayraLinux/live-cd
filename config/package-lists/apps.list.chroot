@@ -1,10 +1,7 @@
-notification-daemon
 update-notifier
-#if ARCHITECTURES i386
 programa2mp
-#endif
+sopi
 tbo
-huayra-caripela
 cowsay
 conectar-educativo
 gnome-keyring
@@ -15,6 +12,3 @@ gnome-keyring
 glx-alternative-mesa
 xserver-xorg-input-all
 xserver-xorg-video-all
-huayra-mu
-huayra-grub-themes-liso
-plymouth-themes-huayra-liso
