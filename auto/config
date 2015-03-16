@@ -31,6 +31,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --binary-images iso-hybrid \
     --debian-installer live \
     --debian-installer-gui true \
+    --debian-installer-distribution daily \
     --checksums md5 \
     --debug \
     --distribution jessie \
@@ -64,6 +65,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--binary-images iso-hybrid \
 	--debian-installer live \
 	--debian-installer-gui true \
+	--debian-installer-distribution daily \
 	--checksums md5 \
 	--debug \
 	--distribution jessie \
