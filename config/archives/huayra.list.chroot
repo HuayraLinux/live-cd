@@ -5,3 +5,4 @@ deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra sud main contrib non-f
 # Repositorio de Huayra GNU/Linux (actualizaciones)
 deb http://repo.huayra.conectarigualdad.gob.ar/huayra sud-updates main contrib non-free
 deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra sud-updates main contrib non-free
+

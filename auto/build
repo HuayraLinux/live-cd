@@ -58,6 +58,14 @@ else
 echo -e "grub-pc" > config/package-lists/grub.list.chroot
 fi
 
+#proposed (hacer una iso con proposed)
+if [ "$PROPOSED" = "1" ]; then
+  echo '# Repositorio de Huayra GNU/Linux (proposed)' > config/archives/proposed.list.binary
+  echo 'deb http://repo.huayra.conectarigualdad.gob.ar/huayra sud-updates main contrib non-free' >> config/archives/proposed.list.binary
+  echo 'deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra sud-updates main contrib non-free' >>config/archives/proposed.list.binary
+  cp config/archives/proposed.list.binary config/archives/proposed.list.chroot
+fi
+
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f live-image-$ARCH.hybrid.iso ]; then
   mv live-image-$ARCH.hybrid.iso $PROJECT_NAME-$BUILD_VERSION.iso

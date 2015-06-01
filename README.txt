@@ -44,6 +44,10 @@ EFI: Valor 1 para crear una iso con los paquetes grub-efi en vez de grub-pc
 
   sudo ARCH=amd64 CACHER=127.0.0.1:3142 RELEASE_VERSION=2.0beta EFI=1 lb build
 
+PROPOSED: Valor 1 para agregar repos proposed (por lo general para pruebas de actualizaciones)
+
+  sudo ARCH=amd64 CACHER=127.0.0.1:3142 RELEASE_VERSION=2.0beta EFI=1 PROPOSED=1 lb build
+
 Limpieza del build
 ------------------
 

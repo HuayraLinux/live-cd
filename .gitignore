@@ -34,3 +34,4 @@ config/build
 config/package-lists/debug.list.chroot
 config/package-lists/grub.list.chroot
 buildall.sh
+config/archives/proposed.*

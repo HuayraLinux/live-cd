@@ -20,3 +20,8 @@ rm -rf config/includes.binary/.disk
 rm -rf config/includes.binary/boot
 rm -rf config/includes.binary/efi
 rm -f config/package-lists/grub.chroot
+
+#limpieza de proposed
+
+rm -f config/archives/proposed.list.chroot
+rm -f config/archives/proposed.list.binary
