@@ -23,7 +23,7 @@ ARCH (obligatorio): Se debe definir de que arquitectura se genera la iso (amd64 
 
   sudo ARCH=amd64 lb build
 
-CACHER: Si se usa el apt-cacher se debe cagar la variable con host y port del mismo:
+CACHER: Si se usa el apt-cacher se debe cargar la variable con host y port del mismo:
 
   sudo ARCH=amd64 CACHER=127.0.0.1:3142 lb build
 
