@@ -33,9 +33,9 @@ if  [ "$ARCH" == "amd64" ]; then
     --debian-installer-gui true \
     --checksums md5 \
     --debug \
-    --distribution jessie \
+    --distribution stretch \
     --iso-application 'Huayra GNU/Linux' \
-    --iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
+    --iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; equipohuayra@gmail.com' \
     --iso-volume 'Huayra GNU/Linux' \
     --initsystem systemd \
     --linux-packages "linux-image linux-headers" \

@@ -1,8 +1,8 @@
 # Repositorio de Huayra GNU/Linux
-deb http://repo.huayra.conectarigualdad.gob.ar/huayra zonda main contrib non-free
-deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra zonda main contrib non-free
+deb http://repo-huayra.conectarigualdad.gob.ar/huayra zonda main contrib non-free
+deb-src http://repo-huayra.conectarigualdad.gob.ar/huayra zonda main contrib non-free
 
 # Repositorio de Huayra GNU/Linux (actualizaciones)
-deb http://repo.huayra.conectarigualdad.gob.ar/huayra zonda-updates main contrib non-free
-deb-src http://repo.huayra.conectarigualdad.gob.ar/huayra zonda-updates main contrib non-free
+deb http://repo-huayra.conectarigualdad.gob.ar/huayra zonda-updates main contrib non-free
+deb-src http://repo-huayra.conectarigualdad.gob.ar/huayra zonda-updates main contrib non-free
 

@@ -42,22 +42,6 @@ tpl isolinux/menu.cfg config/includes.binary/isolinux/menu.cfg
 tpl isolinux/live-$ARCH.cfg config/includes.binary/isolinux/live.cfg
 tpl README config/includes.binary/README
 
-# Soporte UEFI
-if [ "$EFI" = "1" ]; then 
-    cp -a uefi/$ARCH/* config/includes.binary/
-    echo -e "grub-efi" > config/package-lists/grub.list.chroot
-    case "$ARCH" in
-      amd64)
-        echo -e "grub-efi-amd64" >> config/package-lists/grub.list.chroot
-        ;;
-      i386)
-        echo -e "grub-efi-ia32" >> config/package-lists/grub.list.chroot
-        ;;
-    esac
-else
-echo -e "grub-pc" > config/package-lists/grub.list.chroot
-fi
-
 #proposed (hacer una iso con proposed)
 if [ "$PROPOSED" = "1" ]; then
   echo '# Repositorio de Huayra GNU/Linux (proposed)' > config/archives/proposed.list.binary
