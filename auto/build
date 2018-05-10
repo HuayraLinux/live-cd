@@ -51,8 +51,8 @@ if [ "$PROPOSED" = "1" ]; then
 fi
 
 lb build noauto "${@}" 2>&1 | tee build.log
-if [ -f live-image-$ARCH.hybrid.iso ]; then
-  mv live-image-$ARCH.hybrid.iso $PROJECT_NAME-$BUILD_VERSION.iso
+if [ -f live-image-$ARCH-hybrid.iso ]; then
+  mv live-image-$ARCH-hybrid.iso $PROJECT_NAME-$BUILD_VERSION.iso
   mv live-image-$ARCH.contents $PROJECT_NAME-$BUILD_VERSION.contents
   mv live-image-$ARCH.packages $PROJECT_NAME-$BUILD_VERSION.packages
   mv live-image-$ARCH.files $PROJECT_NAME-$BUILD_VERSION.files

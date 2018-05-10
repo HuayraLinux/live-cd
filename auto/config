@@ -48,6 +48,8 @@ if  [ "$ARCH" == "amd64" ]; then
     --mirror-debian-installer $MIRROR \
     --security true \
     --updates true \
+    --firmware-binary true \
+    --firmware-chroot true
     "${@}"
 
 elif [ "$ARCH" == "i386" ]; then
@@ -61,6 +63,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--archive-areas 'main contrib non-free' \
 	--keyring-packages 'debian-archive-keyring huayra-archive-keyring' \
 	--bootappend-live 'hostname=huayra' \
+	--bootloaders "syslinux,grub-efi" \
 	--binary-images iso-hybrid \
 	--debian-installer live \
 	--debian-installer-gui true \
