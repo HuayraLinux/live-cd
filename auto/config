@@ -22,7 +22,7 @@ if  [ "$ARCH" == "amd64" ]; then
 
     lb config noauto \
     --apt apt \
-    --apt-options '--force-yes -y' \
+    --apt-options '--allow-unauthenticated -y' \
     --apt-recommends false \
     --apt-source-archives true \
     --architectures amd64 \
@@ -49,7 +49,8 @@ if  [ "$ARCH" == "amd64" ]; then
     --security true \
     --updates true \
     --firmware-binary true \
-    --firmware-chroot true
+    --firmware-chroot true \
+    --uefi-secure-boot disabled
     "${@}"
 
 elif [ "$ARCH" == "i386" ]; then
