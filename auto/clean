@@ -11,15 +11,9 @@ rm -f config/package-lists/debug.list.chroot
 rm -f config/binary config/bootstrap config/chroot config/common config/source
 rm -f build.log
 
-# limpiando arcivos generados por templates
+# limpiando archivos generados por templates
 rm -f config/includes.binary/isolinux/live.cfg
 rm -f config/includes.binary/isolinux/menu.cfg
-
-# limpiando archivos de uefi
-rm -rf config/includes.binary/.disk
-rm -rf config/includes.binary/boot
-rm -rf config/includes.binary/efi
-rm -f config/package-lists/grub.list.chroot
 
 #limpieza de proposed
 
