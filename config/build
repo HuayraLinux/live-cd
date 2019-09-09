@@ -2,7 +2,7 @@
 Architecture: amd64
 Archive-Areas: main contrib non-free
 Distribution: stretch
-Mirror-Bootstrap: http://127.0.0.1:3142/ftp.debian.org/debian/
+Mirror-Bootstrap: http://127.0.0.1:3142/deb.debian.org/debian/
 
 [FIXME]
 Configuration-Version: 4.0~alpha37

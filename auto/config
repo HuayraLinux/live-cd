@@ -2,10 +2,10 @@
 set -e
 
 if [ -z "$CACHER" ]; then
-  MIRROR="http://ftp.debian.org/debian/"
+  MIRROR="http://deb.debian.org/debian/"
   MIRROR_SECURITY="http://security.debian.org/"
 else
-  MIRROR="http://$CACHER/ftp.debian.org/debian/"
+  MIRROR="http://$CACHER/deb.debian.org/debian/"
   MIRROR_SECURITY="http://$CACHER/security.debian.org/"
 fi
 
@@ -31,11 +31,12 @@ if  [ "$ARCH" == "amd64" ]; then
     --binary-images iso-hybrid \
     --debian-installer live \
     --debian-installer-gui true \
+    --debian-installer-distribution daily \
     --checksums md5 \
     --debug \
     --distribution stretch \
     --iso-application 'Huayra GNU/Linux' \
-    --iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; equipohuayra@gmail.com' \
+    --iso-publisher 'Huayra GNU/Linux; http://huayra.conectarigualdad.gob.ar/; equipohuayra@gmail.com' \
     --iso-volume 'Huayra GNU/Linux' \
     --initsystem systemd \
     --linux-packages "linux-image linux-headers" \
@@ -72,7 +73,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--debug \
 	--distribution jessie \
 	--iso-application 'Huayra GNU/Linux' \
-	--iso-publisher 'Conectar Igualdad; http://www.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
+	--iso-publisher 'Huayra GNU/Linux; http://huayra.conectarigualdad.gob.ar/; info@conectarigualdad.gob.ar' \
 	--iso-volume 'Huayra GNU/Linux' \
 	--initsystem systemd \
 	--linux-packages "linux-image linux-headers" \
