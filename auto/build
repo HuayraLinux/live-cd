@@ -45,10 +45,19 @@ tpl README config/includes.binary/README
 #proposed (hacer una iso con proposed)
 if [ "$PROPOSED" = "1" ]; then
   echo '# Repositorio de Huayra GNU/Linux (proposed)' > config/archives/proposed.list.binary
-  echo 'deb http://repo.huayra.educar.gob.ar/huayra sud-proposed main contrib non-free' >> config/archives/proposed.list.binary
-  echo 'deb-src http://repo.huayra.educar.gob.ar/huayra sud-proposed main contrib non-free' >>config/archives/proposed.list.binary
+  echo 'deb http://repo.huayra.educar.gob.ar/huayra austral-proposed main contrib non-free' >> config/archives/proposed.list.binary
+  echo 'deb-src http://repo.huayra.educar.gob.ar/huayra austral-proposed main contrib non-free' >>config/archives/proposed.list.binary
   cp config/archives/proposed.list.binary config/archives/proposed.list.chroot
 fi
+
+#torbellino (hacer una iso con torbellino)
+if [ "$TORBELLINO" = "1" ]; then
+  echo '# Repositorio de Huayra GNU/Linux (torbellino)' > config/archives/torbellino.list.binary
+  echo 'deb http://repo.huayra.educar.gob.ar/huayra torbellino main contrib non-free' >> config/archives/torbellino.list.binary
+  echo 'deb-src http://repo.huayra.educar.gob.ar/huayra torbellino main contrib non-free' >> config/archives/torbellino.list.binary
+  cp config/archives/torbellino.list.binary config/archives/torbellino.list.chroot
+fi
+
 
 lb build noauto "${@}" 2>&1 | tee build.log
 if [ -f live-image-$ARCH.hybrid.iso ]; then

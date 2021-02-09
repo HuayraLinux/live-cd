@@ -34,7 +34,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --debian-installer-distribution daily \
     --checksums md5 \
     --debug \
-    --distribution stretch \
+    --distribution buster \
     --iso-application 'Huayra GNU/Linux' \
     --iso-publisher 'Huayra GNU/Linux; http://huayra.educar.gob.ar/; equipohuayra@gmail.com' \
     --iso-volume 'Huayra GNU/Linux' \
@@ -71,7 +71,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--debian-installer-gui true \
 	--checksums md5 \
 	--debug \
-	--distribution jessie \
+	--distribution buster \
 	--iso-application 'Huayra GNU/Linux' \
 	--iso-publisher 'Huayra GNU/Linux; http://huayra.educar.gob.ar/; equipohuayra@gmail.com' \
 	--iso-volume 'Huayra GNU/Linux' \
