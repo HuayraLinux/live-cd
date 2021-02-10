@@ -19,3 +19,6 @@ rm -f config/includes.binary/isolinux/menu.cfg
 
 rm -f config/archives/proposed.list.chroot
 rm -f config/archives/proposed.list.binary
+
+rm -f config/archives/torbellino.list.chroot
+rm -f config/archives/torbellino.list.binary
