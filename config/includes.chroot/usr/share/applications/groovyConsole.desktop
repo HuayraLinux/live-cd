@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Groovy Console
+Type=application
+Exec=/usr/bin/groovyConsole
+Terminal=false
+Comment=Groovy Script Console
+NoDisplay=true
+Categories=Development;IDE
+Name[en]=Groovy Script Console
+

@@ -32,7 +32,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --binary-images iso-hybrid \
     --debian-installer live \
     --debian-installer-gui true \
-    --debian-installer-distribution daily \
+    --debian-installer-distribution buster \
     --checksums md5 \
     --debug \
     --distribution buster \

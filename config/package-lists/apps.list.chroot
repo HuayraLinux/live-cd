@@ -1,5 +1,6 @@
 arduino-installer
 audacity
+avogadro
 babiloo
 babiloo-dicts-spanish
 bkchem
@@ -16,6 +17,7 @@ fluid-soundfont-gm
 fluidsynth
 freecad
 freeplane
+fritzing
 gambas3
 gcu-bin
 geany
@@ -30,12 +32,16 @@ jclic
 jstest-gtk
 kturtle
 librecad
+man-db
+manpages-es
+mixxx
 mpv
 npm
 okular
 openshot
 orca
 pencil2d
+pilasbloques
 python-qt4
 quadrapassel
 scilab
@@ -46,6 +52,10 @@ sweethome3d
 synfigstudio
 thunderbird
 thunderbird-l10n-es-ar
+tree
+unrar-free
+vim-gtk
 vlc
 vokoscreen
 wxmaxima
+xfce4-clipman
