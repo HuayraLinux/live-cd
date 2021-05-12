@@ -27,7 +27,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --apt-source-archives true \
     --architectures amd64 \
     --archive-areas 'main contrib non-free' \
-    --backports true \
+    --backports false \
     --keyring-packages 'debian-archive-keyring huayra-archive-keyring' \
     --binary-images iso-hybrid \
     --debian-installer live \
@@ -40,7 +40,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --iso-publisher 'Huayra GNU/Linux; http://huayra.educar.gob.ar/; equipohuayra@gmail.com' \
     --iso-volume 'Huayra GNU/Linux' \
     --initsystem systemd \
-    --linux-packages "linux-image linux-headers linux-image-5.9.0-0.bpo.5 linux-headers-5.9.0-0.bpo.5" \
+    --linux-packages "linux-image linux-headers" \
     --zsync false \
     --loadlin false \
     --win32-loader false \
