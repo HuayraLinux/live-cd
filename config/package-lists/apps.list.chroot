@@ -42,6 +42,7 @@ openshot
 orca
 pencil2d
 pilasbloques
+pulseaudio-module-bluetooth
 python-qt4
 quadrapassel
 scilab
@@ -56,6 +57,7 @@ tree
 unrar-free
 vim-gtk
 vlc
+vlc-l10n
 vokoscreen
 wxmaxima
 xfce4-clipman
