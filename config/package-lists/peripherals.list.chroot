@@ -1,2 +1,4 @@
 printer-driver-all-enforce
 mintstick
+firmware-rtw88
+rtw88-dkms
