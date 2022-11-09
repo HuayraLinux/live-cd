@@ -12,6 +12,7 @@ cura
 darktable
 dia
 dia-shapes
+espeak-ng
 firefox-installer
 fluid-soundfont-gm
 fluidsynth
@@ -36,6 +37,7 @@ man-db
 manpages-es
 mixxx
 mpv
+net-tools
 npm
 okular
 openshot
@@ -48,6 +50,7 @@ quadrapassel
 scilab
 simple-scan
 sozi
+speech-dispatcher-espeak-ng
 stellarium
 sweethome3d
 synfigstudio
