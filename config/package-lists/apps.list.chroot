@@ -1,9 +1,6 @@
 arduino-installer
 audacity
 avogadro
-babiloo
-babiloo-dicts-spanish
-bkchem
 blender
 build-essential
 calibre
@@ -45,13 +42,12 @@ orca
 pencil2d
 pilasbloques
 pulseaudio-module-bluetooth
-python-qt4
 quadrapassel
 scilab
 simple-scan
-sozi
 speech-dispatcher-espeak-ng
 stellarium
+sudo
 sweethome3d
 synfigstudio
 thunderbird

@@ -1,8 +1,8 @@
 [Image]
 Architecture: amd64
 Archive-Areas: main contrib non-free
-Distribution-Chroot: buster
-Distribution-Binary: buster
+Distribution-Chroot: bullseye
+Distribution-Binary: bullseye
 Mirror-Bootstrap: http://127.0.0.1:3142/deb.debian.org/debian/
 
 [FIXME]

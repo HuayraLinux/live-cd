@@ -3,10 +3,10 @@ set -e
 
 if [ -z "$CACHER" ]; then
   MIRROR="http://deb.debian.org/debian/"
-  MIRROR_SECURITY="http://security.debian.org/"
+  MIRROR_SECURITY="http://security.debian.org/debian-security"
 else
   MIRROR="http://$CACHER/deb.debian.org/debian/"
-  MIRROR_SECURITY="http://$CACHER/security.debian.org/"
+  MIRROR_SECURITY="http://$CACHER/security.debian.org/debian-security"
 fi
 
 if [ -z "$ARCH" ]; then
@@ -35,7 +35,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --debian-installer-distribution daily \
     --checksums md5 \
     --debug \
-    --distribution buster \
+    --distribution bullseye \
     --iso-application 'Huayra GNU/Linux' \
     --iso-publisher 'Huayra GNU/Linux; http://huayra.educar.gob.ar/; equipohuayra@gmail.com' \
     --iso-volume 'Huayra GNU/Linux' \
@@ -52,7 +52,6 @@ if  [ "$ARCH" == "amd64" ]; then
     --updates true \
     --firmware-binary true \
     --firmware-chroot true \
-    --uefi-secure-boot disabled
     "${@}"
 
 elif [ "$ARCH" == "i386" ]; then
@@ -72,7 +71,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--debian-installer-gui true \
 	--checksums md5 \
 	--debug \
-	--distribution buster \
+	--distribution bullseye \
 	--iso-application 'Huayra GNU/Linux' \
 	--iso-publisher 'Huayra GNU/Linux; http://huayra.educar.gob.ar/; equipohuayra@gmail.com' \
 	--iso-volume 'Huayra GNU/Linux' \
