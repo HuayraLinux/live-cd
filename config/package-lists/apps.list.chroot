@@ -37,6 +37,8 @@ man-db
 manpages-es
 mixxx
 mpv
+ncal
+neofetch
 net-tools
 npm
 okular
@@ -61,6 +63,7 @@ vim-gtk
 vlc
 vlc-l10n
 vokoscreen
+wget
 wxmaxima
 xfce4-clipman
 
