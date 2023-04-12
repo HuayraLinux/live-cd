@@ -11,6 +11,7 @@ dconf-editor
 dia
 dia-shapes
 espeak-ng
+ffmpegthumbnailer
 firefox-installer
 fluid-soundfont-gm
 fluidsynth
@@ -27,6 +28,7 @@ gnome-chess
 gnome-keyring
 gnome-sudoku
 gnome-themes-standard
+gstreamer1.0-plugins-ugly
 lmms
 ipython3
 jclic
