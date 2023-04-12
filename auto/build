@@ -69,6 +69,7 @@ if [ -f live-image-$ARCH.hybrid.iso ]; then
   mv chroot.packages.install $PROJECT_NAME-$BUILD_VERSION.chroot.packages.install
   mv chroot.packages.live $PROJECT_NAME-$BUILD_VERSION.chroot.packages.live
   mv build.log $PROJECT_NAME-$BUILD_VERSION.build.log
+  mv binary.modified_timestamps $PROJECT_NAME-$BUILD_VERSION.binary.modified_timestamps
   md5sum $PROJECT_NAME-$BUILD_VERSION.iso > $PROJECT_NAME-$BUILD_VERSION.iso.md5
 else
   test -f live-image-$ARCH.contents && mv live-image-$ARCH.contents $PROJECT_NAME-$BUILD_VERSION.contents.error
