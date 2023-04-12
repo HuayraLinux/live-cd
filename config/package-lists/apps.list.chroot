@@ -29,6 +29,7 @@ gnome-keyring
 gnome-sudoku
 gnome-themes-standard
 gstreamer1.0-plugins-ugly
+libgdk-pixbuf2.0-bin
 lmms
 ipython3
 jclic
