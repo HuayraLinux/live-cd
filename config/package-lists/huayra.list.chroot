@@ -1,7 +1,6 @@
 gnupg2
 huayra-apps
 huayra-avatar
-huayra-backgrounds-huayra5
 huayra-backgrounds-ci22
 huayra-backgrounds-liso
 huayra-base
@@ -14,4 +13,4 @@ huayra-juegos
 huayra-simulaciones-interactivas
 #huayra-stopmotion
 huayra-themes-jm
-# plymouth-themes-huayra-ocho
+plymouth-themes-huayra-6
