@@ -30,7 +30,9 @@ gnome-sudoku
 gnome-themes-standard
 gstreamer1.0-plugins-ugly
 libgdk-pixbuf2.0-bin
+libqt5multimedia5-plugins
 lmms
+lumi
 ipython3
 jclic
 jstest-gtk
