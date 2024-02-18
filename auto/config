@@ -26,7 +26,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --apt-recommends false \
     --apt-source-archives true \
     --architectures amd64 \
-    --archive-areas 'main contrib non-free' \
+    --archive-areas 'main contrib non-free non-free-firmware' \
     --backports false \
     --keyring-packages 'debian-archive-keyring huayra-archive-keyring' \
     --binary-images iso-hybrid \
@@ -35,7 +35,7 @@ if  [ "$ARCH" == "amd64" ]; then
     --debian-installer-distribution daily \
     --checksums md5 \
     --debug \
-    --distribution bullseye \
+    --distribution bookworm \
     --iso-application 'Huayra GNU/Linux' \
     --iso-publisher 'Huayra GNU/Linux; http://huayra.educar.gob.ar/; equipohuayra@gmail.com' \
     --iso-volume 'Huayra GNU/Linux' \
@@ -62,7 +62,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--apt-recommends false \
 	--apt-source-archives true \
 	--architectures i386 \
-	--archive-areas 'main contrib non-free' \
+	--archive-areas 'main contrib non-free non-free-firmware' \
 	--keyring-packages 'debian-archive-keyring huayra-archive-keyring' \
 	--bootappend-live 'hostname=huayra' \
 	--bootloaders "syslinux,grub-efi" \
@@ -71,7 +71,7 @@ elif [ "$ARCH" == "i386" ]; then
 	--debian-installer-gui true \
 	--checksums md5 \
 	--debug \
-	--distribution bullseye \
+	--distribution bookworm \
 	--iso-application 'Huayra GNU/Linux' \
 	--iso-publisher 'Huayra GNU/Linux; http://huayra.educar.gob.ar/; equipohuayra@gmail.com' \
 	--iso-volume 'Huayra GNU/Linux' \

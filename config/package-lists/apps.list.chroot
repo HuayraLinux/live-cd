@@ -27,7 +27,7 @@ glx-alternative-mesa
 gnome-chess
 gnome-keyring
 gnome-sudoku
-gnome-themes-standard
+gnome-themes-extra
 gstreamer1.0-plugins-ugly
 libgdk-pixbuf2.0-bin
 libqt5multimedia5-plugins
@@ -48,12 +48,13 @@ net-tools
 npm
 obs-studio
 okular
-openshot
+openshot-qt
 orca
 piskel
 pencil2d
 pilasbloques
 pulseaudio-module-bluetooth
+python-is-python3
 quadrapassel
 scilab
 scratux
@@ -68,7 +69,7 @@ thunderbird
 thunderbird-l10n-es-ar
 tree
 unrar-free
-vim-gtk
+vim-gtk3
 vlc
 vlc-l10n
 vokoscreen
@@ -103,7 +104,6 @@ network-manager-gnome
 network-manager-openvpn-gnome
 ntfs-3g
 ntpdate
-openshot
 pulseaudio
 pulseaudio-utils
 rfkill
@@ -120,3 +120,4 @@ xdg-user-dirs-gtk
 xdg-utils
 zip
 lsb-release
+wpasupplicant
